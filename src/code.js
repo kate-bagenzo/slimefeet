@@ -419,7 +419,7 @@ function updateDialog(str) {
     if (lookForMIASMA.test(str)) {
         console.log("MIASMA LOG FOUND")
         const log = document.querySelector('#MIASMA')
-        const miasma = str.slice(0, -1)
+        const miasma = str;
         if (miasma == "MIASMALOG_1") {
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>

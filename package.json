@@ -7,7 +7,7 @@
     "start": "npm run dev",
     "dev": "electron ."
   },
-  "author": "nadia nova, kate bagenzo",
+  "author": "nadia nova, kate bagenzo, freya campbell, stanwixbuster",
   "license": "UNLICENSED",
   "devDependencies": {
     "electron": "^34.2.0"
