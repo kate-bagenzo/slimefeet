@@ -141,7 +141,7 @@
     color:#fff;
   }
 
-  #autoplay:hover, #reset:hover {
+  #autoplay:hover, #quit:hover {
     cursor: pointer;
     color: #0086e6;
   }
@@ -158,7 +158,7 @@
     color: #0086e6 !important;
   }
 
-  #reset {
+  #quit {
     position: absolute;
     bottom: 4vh;
     right: 7vh;
@@ -221,7 +221,7 @@
     height:1%;
   }
 
-  #reset-window {
+  #quit-window {
     width:30vw;
     background-color: RGBA(0,0,0,0.9);
     border: 2px solid #fff;
@@ -233,18 +233,18 @@
     padding:4vh;
   }
 
-  #reset-window div {
+  #quit-window div {
     font-size:3vh;
     display:inline-block;
     margin-top:1vh;
   }
 
-  #reset-window div:hover {
+  #quit-window div:hover {
     color: #e60017;
     cursor: pointer;
   }
 
-  #reset-window-yes {
+  #quit-window-yes {
     margin-right:3vw;
   }
 

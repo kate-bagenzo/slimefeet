@@ -17,7 +17,6 @@ mods by @stanwixbuster / stanwixbuster.itch.io
 */
 
 
-
 var current = 0;
 var storyArray = {};
 var chapters = {};
@@ -143,18 +142,17 @@ function readyStory () {
         toggleAutoplay();
     });
 
-    document.getElementById('reset').addEventListener("click", (event) => {
+    document.getElementById('quit').addEventListener("click", (event) => {
         if (pauseInput || inMenu) return;
-        document.getElementById('reset-window').classList.remove("hidden");
-        document.getElementById('reset').classList.add("menuOpen");
+        document.getElementById('quit-window').classList.remove("hidden");
+        document.getElementById('quit').classList.add("menuOpen");
     });
-    document.getElementById('reset-window-no').addEventListener("click", (event) => {
-        document.getElementById('reset-window').classList.add("hidden");
-        document.getElementById('reset').classList.remove("menuOpen");
+    document.getElementById('quit-window-no').addEventListener("click", (event) => {
+        document.getElementById('quit-window').classList.add("hidden");
+        document.getElementById('quit').classList.remove("menuOpen");
     });
-    document.getElementById('reset-window-yes').addEventListener("click", (event) => {
+    document.getElementById('quit-window-yes').addEventListener("click", (event) => {
         clearSave();
-        window.location.reload();
     });
 
     document.getElementById("curtain").addEventListener("click", (event) => {
