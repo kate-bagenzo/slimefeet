@@ -1,0 +1,1556 @@
+START
+CLEARSCREEN CLEARSTATUS SFX_TITLE BG_TITLE - videotome adventure v0.5
+engine & demo script by freya campbell + mods by stanwixbuster
+
+slime feet is made for Videotome Jam "Waiting" & Yuri Game Jam 2024
+slime feet is best experienced in full screen
+
+STATUS:[<center>body horror</center>] - slime feet is about body horror
+STATUS:[<center>body horror<br>foot fetishism</center>] - slime feet is about extravagant foot fetishism
+STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex</center>] - slime feet is about sloppy messy lesbian cybersex
+STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot</center>] - slime feet is about 'faggot' getting thrown around like candy
+STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot<br>death</center>] - slime feet is about an inevitable drawn out death
+
+STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot<br>death<br><br>i love you</center>] - slime feet is about you knowing i love you
+
+slime feet is about to start right now
+CLEARSCREEN CLEARSTATUS IMAGE:BG_CLEAR:back:0:0 - 
+SFX_SKI MUS_INTRO IMAGE:BG_SKI - It's cold.
+The airlock latch is pissing me off.
+I roll my shoulder still stiff after fighting that frozen piece of shit open and shut.
+With the aid of my poles, my weight shifts from side to side as I ski onwards in the crystal clean snow.
+This was just another day.
+
+IMAGE:BG_1b - As my skis slide over the untouched snowy ground the squeaking of snow keeps me grounded.
+With the absense of wind the only sounds I hear is mine.
+Even in my sweaty suit I'm painfully aware the outside temperature is instant death for a human like me.
+
+IMAGE:BG_0 - Countless people have asked the same question before me;
+
+What are we even doing here?
+Snow as far as the eye can see.
+IMAGE:BG_STATION - The grand gray structure of the Amoninsula Research Facility stands in front of me in the blinding white view.
+Just another day.
+Yet, everything seems more arduous today.
+While completing my routine maintenance lap around the facility I feel like the environment itself is telling me to leave.
+I already see the main entrance and hot coffee sounds like heaven right now.
+IMAGE:BG_0 - I slept longer than usual, even now still trying to wake up.
+IMAGE:BG_0b - The temperature is colder than usual, and I wasn't looking forward to bending the frozen latch open a second time.
+The only solace is that I'm going to file an annoyed, and urgent replacement request.
+CLEARSTATUS SFX_SNOW IMAGE:BG_0 - Suddenly I notice the strap of my pole sliding down my glove.
+
+IMAGE:BG_POLE - The strap is already gone before I even have time to try and fix it.
+Even my pole stumbles down into the snow.
+I sigh and lean down to lift it back up.
+SFX_WIND - A gust of wind plays with my balance as my oversized glove just sinks into the powder snow.
+My full attention is on the ground, and the silence around me leaves me with a false sense of security.
+CLEARSCREEN:true IMAGE:BG_CLEAR:back:0:0 MUS_SILENCE - Everything was fine.
+SFX_MIASMA IMAGE:BG_BAD - Until it wasn't.
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC SFX_LOG - >>>
+MIASMALOG_1
+CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
+MIASMALOG_2
+MUS_READ CLEARSCREEN CLEARSTATUS BG_PC FG_BLANK - day one
+STATUS:[<center>day one</center>] - 
+A! - Estelle. Are you there?
+S! - Yeah.
+A! - How you doing?
+S! - Fine.
+A! - Sorry, was that a weird question to lead with?
+S! - Idk it’s fine.
+A! - Um. I finally got around to reading your entry. I'm sorry it took me so long, I was occupied with something else.
+S! - I thought miasma end entries were a priority assignment for you... Or I guess that doesn't apply when I have to write it.
+A! - They are, I just didn't know what to start with. Yeah, I'm just a bystander now.
+S! - Whatever, it took me almost a day to write it in the first place. Just been feeling off.
+A! - Like, from the symptoms or...?
+S! - No, just my brain.
+S! - Nothing bad, just like I'm in a bit of a shock. Like anyone else would, I guess.
+A! - What are you doing now?
+S! - I mean, nothing really.
+S! - My contract is done pretty much. Everything is.
+S! - I just need to write this end log now.
+A! - It's not for any official documentation, but do you want to talk about what happened?
+S! - I don't know, I'd rather hug it out.
+S! - It's a pretty bad time for the quarantine, you can't even come over.
+A! - It'd be weird to hang out in PPE.
+S! - It doesn't matter. It'd still be better than having to type all this shit out.
+S! - It's pretty weird, right? A terminally deadly infection, but for some reason after the initial absorption it's just entirely harmless for others.
+A! - Yeah. It's crazy that the first generation even dared to test that.
+S! - I mean, obviously they tried it with animals first. I hope so. I assume.
+S! - I probably should have read the original miasma reports, just heard people mentioning it.
+A! - Have you read more than the main log?
+S! - Yeah, of course. But it's been a while. Way more incidents to read up on with other hazards.
+A! - You're right.
+S! - I'm such an idiot to get owned by a D tier. Lol.
+A! - You always joked about that.
+S! - I mean, you too. You still have time. Lmao.
+A! - I only accept S rank deaths.
+A! - I'll try not to.
+S! - You're a S rank dork lmao.
+S! - Hmph, lucky you.
+A! - What even happened?
+BG_3 - 
+A! - I felt like you were vague in your report. How did it get so close in the first place?
+
+S! - It wasn't my fault.
+A! - What do you mean?
+S! - Well, it was! I just had my mind on something else. I just... look it was just an off day.
+A! - Oh.
+S! - It was meant to be a routine checkup. Fucking ski around the facility. Get annoyed by the dumb gayger counter sound. Write down the same numbers over and over again.
+S! - Fuck, I've done that so many times and the real S hazard is boredom.
+A! - We always need to be careful here. Always.	But like I guess it's true the hazards usually never come this close.
+S! - Yeah! It wasn't my fault! Well, it was. Fuck.
+S! - The latch breaking was the problem, not me spacing out for a bit!
+S! - I just noticed it was close and had plenty time to leave, but not just the latch, the fucking shutter broke too.
+S! - Seriously?
+S! - Two malfunctions on one trip? Last time that happened was like //050 or something.
+A! - I'm sorry.
+A! - I'm going to contact the engineering department and see if there is something they can do for the future.
+S! - You better get someone fired for this. Or killed. I don't care, I won't be around.
+A! - I'll do it.
+S! - Do you mean you'll get someone killed or get someone fired?
+A! - Sure.
+S! - You're an idiot, you know that right?
+A! - You keep trying to convince me.
+S! - You should try to convince The Overseer to let you come visit me.
+A! - What? I can't do that. Quarantine, remember?
+S! - So what, I'm already gonna die, doesn't matter if you infect me or whatever.
+A! - But what if you're infected? Then I'll get sick.
+S! - Honestly, I bet this miasma is gonna destroy any pathetic little virus on me.
+A! - What are we even quarantined for? I didn't read the report.
+S! - Seriously? This is why you're such an idiot.
+A! - ...
+S! - Go read it yourself, I'm not gonna bother explaining.
+A! - I'll read it later.
+S! - Yeah, you should talk to me while you still can. Took you long enough to message me.
+A! - I said already, I was busy. You know I'm awkward about stuff like this.
+S! - Yeah right. Can't get anything done without someone breathing down your neck. Let me guess someone told you to, literally before you contacted me?
+A! - Yes.
+A! - No.
+A! - Maybe.
+S! - I'm serious, though. I'd like to see you.
+A! - I... I don't think anyone would ever approve of that. Not The Overseer, not even if I sent The Chief Medical Officer on the task. Somehow.
+S! - You'll try at least, right?
+A! - I'd be risking my life, you know.
+S! - Yeah, but I'm losing mine. Think of it like one of those make-a-wish foundation things.
+A! - Isn't that a thing for children?
+S! - I'll be a dumb baby if it means I can get my wish through.
+A! - You're weird.
+S! - Abbi, please. You'll try at least?
+A! - Yeah, obviously.
+A! - I'll try.
+S! - I can still move my toes. If you're fast about it I can still roll them on your face.
+A! - Sdgkjhsdg!!
+S! - I can already tell I'm motivating you.
+BG_4 - 
+A! - ...........h
+S! - What's wrong? I thought I was going to be the one unable to write.
+A! - Shut up. It's embarrassing. And you can't use your fate against me!
+S! - I can and I will if it helps my case.
+A! - .....I'll file a request to break the quarantine for us.
+S! - Wow, you're such a pervert. Lol.
+A! - Shut up, you're the one bringing this all up!
+S! - Ahahahah.
+A! - You seem like you're doing fine after all.
+S! - Yeah, that's what I said. Scroll up, dummy.
+BG_5 - 
+
+A! - Since I can't come over it's good it wasn't your hands.
+S! - Yeah.
+A! - Not that I'm happy it's your feet either, but you know.
+S! - I bet you'd want it the other way around if it wasn't for the quarantine.
+A! - I'd be visiting you in PPE! I couldn’t even do anything to your feet!
+S! - Yeah right, you're quick to slip out when you get horny.
+A! - ....shut up. There's a limit to everything!
+S! - I'm sure I could convince you to get on the floor and huff my feet like you always do.
+A! - I'm sorry this is too much for me to talk about.
+A! - Why are you being so horny all of the sudden?
+BG_GAY - 
+S! - Dunno. I feel like I'm always like this.
+A! - ...I guess.
+S! - You enable me.
+A! - No, you enable me.
+S! - Ahahah. Idiot.
+A! - You are.
+S! - Sorry. I know it's weird.
+A! - Yeah.
+S! - Awkward timing, I know, but I think I'll end the chat here.
+A! - Uh. Okay.
+S! - Someone from the health department told me I should get used to going to the bathroom early and often so I don’t piss myself.
+A! - Oh. Yeah. That would do it.
+S! - Anyway, gonna do some laps while I'm at it.
+A! - Just uhhh... if you have nothing better to do just spam me, okay?
+S! - I'll still be stuck with my work, but I'll talk with you when I can.
+BG_PC2 - 
+S! - I'll try.
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+MIASMALOG_3
+CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
+MIASMALOG_4
+MUS_2 CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day two
+STATUS:[<center>day two</center>] - 
+BG_PC - 
+S! - So when you coming over?
+A! - They haven’t responded to my application yet.
+S! - Fuck applications. Stupid time for quarantine.
+A! - I don’t think they’d want us meeting even without the quarantine.
+S! - The miasma doesn’t spread anymore at this point!!
+A! - Yeah, I know. Just, you know.
+S! - Ugh. Dumb.
+S! - When did you send it?
+A! - Right after we stopped talking last night.
+S! - Check if you got a reply lmao
+A! - Give me a moment.
+S! - Well?
+A! - Sorry, just some new task assignments.
+S! - Bleeeh.
+S! - What are you even working on rn?
+A! - Some additional information regarding horocynthia was sent to me.
+S! - What was that again?
+S! - You think I remember what horocnfgdfg is?
+A! - It's the horny flower.
+S! - Oh, you should have just started with horny flower.
+A! - I have to at least pretend to call it by the right name!
+S! - Maybe you can bring some with you.
+A! - I do not currently have access to either you nor the flower.
+S! - You should try harder.
+A! - I'm sorry, Estelle.
+A! - I will try to. Soon.
+BG_BONE2b - 
+S! - Hmph.
+S! - Good.
+A! - How are you feeling?
+S! - You know, just the usual. Slowly melting away. So pretty alright.
+A! - You're not in any pain?
+S! - I thought you were the expert when it comes to miasma.
+A! - Sorry, I know. I just wanted to make sure.
+S! - I don't feel bad at all.
+S! - The discoloration is trying really hard to spread, barely made its way past my knees.
+S! - It's so hard to see cause I’m not white like you all lmaoo.
+A! - Wow. I guess that makes sense.
+A! - You did write that it's getting harder to move.
+S! - Well yeah, not that much though.
+S! - I just had to write it down.
+A! - Okay, just checking.
+A! - You're making it sound less than it actually is.
+S! - Maybe a little bit.
+A! - Why?
+S! - What's wrong with being strong?
+A! - Nothing.
+S! - I tried the wheelchair
+S! - It's pretty comfy to sit in
+A! - Yeah?
+S! - It must be awkward moving around with it though
+S! - like in the real world
+S! - like its bulkier than i expected at least  moving in this room is easy
+A! - Ahh.. Yeah.
+S! - I feel like most places aren't too well equipped for it
+S! - Accessibility problems
+S! - It's been a while since I was last out there
+S! - it's hard to remember just how many place actually had ramps and shit
+S! - You never pay attention to these things before they apply to you
+A! - How long has it even been?
+S! - Couple years of real world time, right?
+S! - Yeah
+S! - It's hard to keep track
+A! - It is. I was never good with it even before coming here.
+S! - Do you think they'll ever let the horny flower out of Amoninsula?
+A! - It's hard to get anything approved.
+S! - It's like the dark continent
+S! - We could come out with a cure for cancer and the public would still be scared.
+BG_3 - 
+S! - I mean, I'd be sceptical too even after seeing all this shit.
+A! - I believe in our work helping the world
+A! - Eventually there's gonna be something we find and drag it back to the real world
+A! - And it will revolutionise everything
+S! - So big dreams
+A! - It's my job
+A! - I have to believe in what I do.
+A! - Why would we be here otherwise?
+S! - I don't know. Just a containment facility.
+S! - It's our job to sacrifice ourselves to make sure the world doesn't end
+S! - Like some random unidentified hazard destroying life as we know it
+A! - Our work here has many purposes
+S! - I don't wanna talk about work.
+A! - Sorry, Estelle.
+A! - What do you want to talk about then?
+S! - I don't know.
+A! - ...
+S! - .....
+A! - ...
+S! - ........................................yea lets spam these
+A! - Wow. Silly.
+A! - Agh. Sorry. I don’t know what to say my mind’s all hazy.
+S! - You think yours is?
+S! - Lmao
+A! - Sorry.
+S! - No its okay
+S! - Feels like I've never had this much time to think.
+A! - That does make sense.
+S! - It's cruel, isn't it?
+S! - I feel like I've just had a long walk and my feet are a bit tired
+S! - but like instead I'm going to die and fade away
+A! - Yeah.. It is.
+S! - You know, maybe clunky wasn't the best word for how it feels.
+S! - It's been a while so the symptoms might be progressing
+S! - but like I can notice how the bones are softening.
+S! - Muscles, tendons, all of that.
+S! - I tried pressing down with a thumb and my skin didn't have the same resistance as usual.
+BG_BONE - 
+A! - That's ahhh... yeah.
+S! - The later symptoms will amplify that.
+S! - Will my skin become soft and stretchy?
+A! - Kinda, yeah.
+S! - This is pretty gross, right?
+A! - Kinda, yeah.
+S! - Feet are not supposed to melt. People are not.
+A! - They are not.
+S! - This doesn't phase you?
+A! - Not the symptoms.
+A! - I've seen a lot worse.
+A! - It's my job, remember?
+S! - Are you sad that it's me?
+A! - Yeah.
+S! - Me too.
+S! - I don't want you to treat me like a subject.
+A! - I'm not!
+S! - You mentioned symptoms in a weird way.
+A! - I did? It wasn't my intention.
+S! - It's already humiliating enough to have to write of myself as a subject.
+A! - You didn't have to.
+S! - I felt like I did. Everything here is so serious.
+A! - Well, I hope I can be of some comfort.
+S! - You are. Of course, you are, idiot.
+A! - That's more like it.
+
+
+
+S! - It's late and I need to go do some stuff.
+A! - Stuff?
+S! - Yeah.
+A! - Oh. Bathroom?
+S! - Yea don’t wanna piss myself lmao.
+A! - Right.
+
+S! - I'll talk to you soon.
+A! - Take care, Estelle.
+
+
+
+
+S! - Thanks for giving a dying girl some of your time...
+A! - Of course. I wouldn’t want it any other way.
+S! - You better not. You owe me.
+A! - What for?
+A! - I mean. Right. True.
+S! - Hehe.
+
+S! - Talk to you tomorrow.
+A! - Yeah. Talk to you soon.
+BG_5 - 
+S! - Night night.
+A! - Good night. Rest well.
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+MIASMALOG_5
+MUS_3 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day three
+STATUS:[<center>day three</center>] - 
+BG_PC5 - 
+S! - Morning abbi whast up
+A! - Morning Estelle
+A! - How's your hands today?
+S! - Pretty good i guess
+S! - you read my entry right?
+A! - Yea. you mentioned your hands
+S! - Its fine i just brought it up
+S! - Was kinda thinking maybe if i say that i can stop writing those things lmao
+A! - You don't want to do them anymore?
+S! - Idk. motivation kinda low i guess
+A! - How are you feeling?
+S! - Hahaha It's like I'm turning into slime.
+S! - That'sgotta be a kink, right?
+A! - Um Yeah definitely.
+S! - I think I've seen something before
+A! - Like slime girls?
+S! - Ooooo! Yeah! Like slime girls!
+S! - Lmao maybe i should film this and you can sell the record and be rich
+A! - Wtf come on
+S! - Seriously!! Ill squirt all over the place all squishy style
+A! - Omg Estelle what's with you today!!
+S! - Haha are you ettin flustered? Do you have that kink?
+A! - What no
+S! - You should. Ill help you. you never stroked to some slime girl hentai??
+A! - Omg
+A! - I don’t know! Maybe!
+S! - Lmaaao tbhIf i ignore the dread of death i think its kinda fun
+A! - Seriously??
+S! - yeah like
+S! - umm i cant walk anymore but
+S! - my body is so sft
+S! - I can still move my hands pretty well
+S! - legs too tbh i just cant stand lmao
+A! - You're crazy omg
+A! - This is just like you
+S! - hahahah
+A! - You're in a better mood today
+S! - heh yea i don't feel liek crytingall day again
+A! - I think I'm a bit same. I cried a bit yesterday
+S! - really?
+A! - And day before
+S! - Me too
+S! - my pussy feels super warm
+A! - Omg???? What is this segue?!
+S! - um its like.. I dunno i just keep my hand there now
+A! - Like.. you are masturbating right now?!
+S! - no like. Idk maybe liek stimming iguess
+A! - Stimming with your pussy?
+S! - As if youve never done that?
+S! - just holding your hand in your panties cause its warm
+S! - or grabbing your tits for fun
+A! - Ahhhhhhhh yea okay. I get you now
+S! - um still. it like
+S! - It like idk it feels warm and like
+S! - makes m feel like im still in control of my body
+A! - I get that
+S! - my crotch feels so good
+S! - even with clumsy soft fingers I can rub and it feels good
+S! - My pussy is so soft too i bet i wouldnt even need warmup to fit three in
+A! - Estelle......................
+S! - What?!
+A! - You know they see all the chatlogs right?
+S! - ye so what? I don't care
+A! - I guess
+BG_PC4 - 
+S! - dont you wanna hear?
+S! - youre hard arent you
+S! - youre hard
+A! - What no!!!
+S! - admit it
+A! - Omg what
+S! - did you touch yourself already?
+A! - Um..
+S! - yo know for stimming
+A! - omg
+S! - tbh Idk i don't think like
+S! - rubbing my clit counts as stimming anymore
+S! - lmao
+A! - Wow you just started doing it??
+S! - Maybe.
+S! - ive always beem pretty good at typing with one hand
+A! - Omg. fucking speed typer
+S! - hey abbi Lets d it together okay?
+A! - What do you mean?
+S! - masturbate you know
+A! - Are you serious? That's weird
+A! - Embarrassing!!
+S! - weve had sex so many times by now we can sext
+A! - ugn
+S! - hehe im so wet and touching myself we should do it together
+S! - i thikn ill just not wear panties anymore they just get in the way lmao
+S! - Ithe room temp is nice and warm
+S! - My pussy is even more. Nice and hot
+S! - your so quiett youre stroking it already?
+S! - i didnt even mention my feet yet
+A! - Guhhhhh
+A! - I uhh.. Estelle...
+S! - im horny okay
+A! - I know I can tell!
+S! - sorry this is fucked up
+S! - morbid
+A! - No it's not that!
+S! - sorry ill stop
+A! - No its okay just yknow
+S! - yea
+A! - Still umm
+S! - what?
+A! - You can...
+A! - you don't have to stop
+S! - really?
+A! - Yeah
+S! - okay. so did you DID GET HARD LMAO
+A! - Shut up
+A! - ................a little bit okay just weird
+S! - i know buti told you it still makes me feel like its still my body
+A! - Yeah
+S! - lets do it together
+A! - What are you doing right now
+S! - mmyfingers are really wet
+A! - Yea?
+S! - ivbe neen doing thissince i mentioned and i feel pervy so it feels really good mybreths getting heavy n my min gets all fuzzy
+A! - Wow!!
+S! - hey think about hte face i always make
+A! - The face?
+S! - yea the face i make when we do it
+A! - Wow,
+S! - i meant when I sit on your dick.
+S! - did you instantly think about my feet??
+A! - Hey.
+S! - YOU DID.
+S! - god
+S! - you cant be salvaged
+S! - footslut
+S! - pervert get on the fukcing floor
+A! - Come on!!!
+A! - I can’t help it you just make me feel so good when I’m down there
+S! - yea? Tell me
+A! - Agh.
+S! - go on dint leave me solo you gabet too
+A! - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+A! - Ok so like when you stare down at me like that and you spread your toes for me swaying right in front of me just to be a tease
+S! - haha i cant help it
+S! - like you your kashes flutter and your eyes roll back you literally look liek youre about to cum the moment your nose touches my smelly feet
+S! - iwant to savour that moemnt it gets me so fucking worked up
+A! - Gahhhhhhhhhhh
+S! - yea. Hey think about my feet on youre face rn yu kissing them
+S! - think about me withl ehagspread ad touching myself when youre down there
+S! - how does it feel?
+A! - soft smooth perfect soles for my face
+S! - how does it smell?
+A! - Sweaty. hot. suffocating
+S! - how does it look?
+A! - aaaI belong down there to see your smirk from between your toes
+S! - yeah? And how do you feel about it?
+A! - horny horny horny
+A! - fuck
+A! - My brain is getting fried
+A! - Sweaty sweaty strong dizzy feet fumes.
+S! - yeah i know i know
+S! - im close kepe gogn
+A! - Wow
+S! - imrealky cllse go on
+A! - I love your toes
+A! - i love your soles
+A! - I go insane soft thighsyour ankles
+A! - especially ankles too fuck
+A! - i love every part of your legs and feet
+A! - fuck i want to smell them so bad rn fuck
+S! - n
+S! - yoyre so pqatheticc yyei
+S! - i know
+S! - ui
+A! - Wow
+S! - hahha ffuck cmunnig
+A! - youre
+A! - wow
+S! - haaaaaaaaaa
+A! - holy shit
+BG_GAY - 
+S! - fuuuck my  room is spinning
+A! - you okay?
+S! - yea of course im oaky i just came
+S! - did you make  a mess?
+A! - Stopppppp
+A! - did you really get off? that was intense
+S! - i did my seat is all wwet i  dint even grab a towele
+A! - Gahhhhh
+S! - scroll up
+A! - why?
+S! - remember when your brain wasnnt fried and used to use proper punctuation and shit like a nerd?? hahah
+A! - Fuck.
+S! - too late now
+S! - come on you dont need it with me
+A! - You're right
+
+BG_5 - 
+S! - im kinda spent after that
+A! - Mhm. I get it
+A! - What are you gonna do about your seat?
+S! - lmao literally nothing who cares
+A! - Wow
+S! - its fine dont worry about it okay
+A! - Okay, I won’t.
+S! - hey no more commas and shit you nerdfuck
+A! - Why??
+S! - idk  feels lots of work for me todo that and i feel weird  seeing you normal
+A! - I’m sorry
+S! - its okay. Irrational lmao
+S! - I’ll do Punctuation And Capital Letters, too.
+S! - We can be Nerds Together.
+A! - Stop!! It’s muscle memory!!
+S! - hahahah dowahtever i dont actually mind lmao
+A! - You’re always such a bully
+S! - it gets you off
+S! - now wipe your widdle cummy off your tummy
+A! - Stopppppp
+
+S! - hehe ill talk to you tomorrow okay
+A! - Oh okay yeah
+S! - Thanks for being here for me
+A! - I wouldn’t want it any other way.
+S! - you raheth sext and ntmo be sharing a bed with me???
+A! - YOU KNOW WHAT I MEAN.
+S! - hahaha. Idiot. Dumbass. Stupid. Nerd.
+A! - Log off already.
+BG_7 - 
+BG_7b - 
+S! - ok.
+A! - Sorry I didn’t mean to tell you to go away or anything.
+BG_PC - 
+S! - heh
+S! - i know
+
+S! - good night
+A! - Good night.
+
+
+S! - im glad yuore here with me
+A! - Me too.
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+MIASMALOG_6
+MUS_4 CLEARSCREEN CLEARSTATUS FG_BLANK - day four
+STATUS:[<center>day four</center>] - 
+
+BG_PC2 S! - abbi
+A! - yea?
+
+S! - i wanna hold you and feel how warm you are
+A! - Oh no. I’m sorry. Me too
+A! - You okay?
+
+
+S! - yea just woje up crying like shit today
+A! - I’m sorry
+S! - its okay ill just talk to you
+A! - Yea. I’ll talk to you all day
+S! - promise?
+A! - Yea
+S! - dont you have like a billion tasks to do?
+A! - I don't care
+S! - youre the best
+BG_PC3 A! - Mhm you deserve it
+
+S! - youre teh best
+A! - I know
+S! - i just want you to know i mean it mean it
+A! - Omg Estelle i know
+S! - i wanna hold you
+A! - I'll hug you okay
+S! - did they deny the clearance
+A! - I’m sorry.
+S! - how hard did you try?
+A! - Um. I think I got priority cause I do End Entries so they replied fast but I'm They declined my request and i contested the declined request
+A! - But they declined that again so I contested that too but they instantly said it just cant be done.
+
+A! - Not safe
+A! - Sorry.
+S! - fuck them
+A! - Idk i kinda don't care about safe anymore.
+S! - really?
+A! - Ye, like I know miasma it's not gonna fucking do shit to me
+A! - idk was freaking out a bit earlier and fantasizing of a way to break out but id need like power tools haha
+S! - fucking prison break lmao
+S! - youd be in huge trouble??
+S! - you too hae like less than two weeks before youre leaving
+A! - Im being irrational i know. I just want to hold you real bad
+S! - me too
+A! - Hug
+S! - hug
+S! - is this a digital hug
+A! - Yea
+A! - I mean we did that digital thing yesterday
+S! - it felt good
+A! - Mh
+S! - lets do it again?
+A! - Really?
+S! - it made me feel warm
+A! - Me too.
+S! - did you really cum last time?
+A! - What?
+S! - idk you were vague
+S! - come on admit
+A! - I did okay!
+S! - why didny you say?
+A! - Don’t laugh.
+S! - i will
+A! - Fuck.
+S! - tell me!!
+A! - I came like.. Super early
+S! - HAHAHA
+A! - Don’t laugh!!
+S! - I told you I will. Fucking faggot quickshot
+A! - Omg. Come on.
+S! - pervert cant keep your gayass dick in control
+A! - Ngghhhh
+S! - lmao when??
+
+A! - I don’t wanna say!!
+S! - tell me when you faggot
+A! - What the fuck.
+S! - FAGGOT. now
+A! - GAghh right when you started!!
+S! - REALLY?
+
+A! - I didn’t know were gonna do a whole thing so..
+S! - hhy were you writing all clumsy at the end?
+S! - wre you faking it for me?
+A! - No! I just
+A! - like
+A! - I was trying to cum again
+S! - hhahaha UNSATIABLE!! pervert!! pertvert!!
+S! - you couldnt resit the moment i brought up my fuckgin feet!!!
+A! - Fuck. You’re alway bullying me
+S! - you’re like an open book.
+S! - or like a book to step on LMAO
+A! - Gah. I can’t help it..
+S! - did yu?
+A! - Did I what?
+S! - cuym youy i diot
+A! - Of course mm right after you it was so hot!!
+S! - hahah I already knew abt your cummies jsut wanted you to say it
+A! - aghhhhhh Don't say it like that!
+S! - hehehehehehe
+A! - gh
+
+
+S! - hey um
+S! - you read my entry right?
+A! - Yeah what now?
+S! - the uhhh
+S! - you know
+S! - the last part
+A! - You mean the transparency part...?
+S! - yea
+S! - wanna kiss it?
+A! - Omg.
+S! - i know you go crazy about ankles would it like
+S! - be better you can kiss and like
+S! - see the bone too??? thats what makes the ankles hot right? smooching on the fucking tibia and fibula type shit
+A! - What the fuck omg
+S! - ipm a slime girl now
+A! - Wow.
+S! - my thighs and hips blue
+A! - That’s crazy I don’t understand why it’s happening
+S! - maybe im special
+S! - i thought its cause my dark skin but i dont know its crazy
+S! - im lookin at my bones right now my myuscles and shit are gone but i can stil move them
+S! - this shist us against the laws oif physics its bringuing itu my scienc nerd like kidna fucking cool
+
+A! - That’s fucked but yeah thats wow
+S! - i know.
+S! - hey its a bitblue but i bet if youd lose it the moment your hips bounce against my squishy cunt think how if you came in me right now youd see your own cock and cum ahha
+A! - Omg.
+A! - Estelle??
+S! - god tour cock is so pathetic no wonder im always stepping on it
+A! - GUH
+S! - hey stat stroking
+S! - unlessyou already made ur little cummies LMAO
+A! - I DIDN’T.
+S! - how ard are you?
+A! - Hard.
+S! - omg watf in gogiun on about blue slimegirl pussy??
+BG_GAY - 
+
+S! - i knew i coudl give you the slime girl kink lpmaooooo
+S! - hey ur not allwed to cum did you cum youre not typing?
+A! - I DIDNT!!!
+S! - good becauseyou have to keep strokign but oyure not allowed to cu mokay?
+A! - Ugh. It’s hard
+S! - it better be. prmise oynl when i cum okay?
+A! - Aghhhh I promise
+S! - fi you cum early you have to say “im a pathetic little baby peepee girl sowwy mommy i cant stop making cummies”
+A! - WHY DID YOU WRITE THAT LONG
+S! - aAHHAHA
+S! - youre stroking?
+A! - Yeah..
+S! - it feels good?
+A! - Yeah
+S! - what are you thinking about
+BG_7b - 
+A! - im a pervert sorry
+S! - say
+A! - I want to rub my face all over your soft blue pussy and lick it myself
+S! - not even feet? wow
+A! - I like other parts too!!
+S! - lick my pussy ckean
+S! - im all drippy n wet dinw there sweaty too
+A! - I want to breathe it in
+S! - no say youre doing it
+A! - I'm breathing it in
+S! - stroke fastyer for mommy
+A! - Gnghhhh
+S! - dont cum but stroke faster. you gave to moan
+A! - I’m moaning! agh I have to stop stroking to type or I’ll cum
+S! - shut uo youre not typing youre eating me out ehole jerking off
+A! - Sorry you feel so good againt my lips
+BG_BONE2 S! - hey diont cum im goun to menrion my feet next
+A! - ok. I won’t cum. fuck. I won’t
+S! - get up
+A! - Yes mommy
+S! - im on my back feet up put your shaft agasint my wetty adn yoyr nose against my soles
+A! - gahhhhhYES
+S! - ur nor allled to pt it in yet start humping myu drippy lips
+S! - now
+A! - Yes when can i cum
+S! - not yethump
+S! - myu soles have never been tghis soft
+A! - They havent
+S! - Blue slime girl feet
+S! - you loe that dont you faggit
+A! - I do I do
+S! - put itin now nose under toes now huf f my feet fumes now
+A! - Hhhhhhhhhhhhhh
+S! - dont cum kiss tehm and hff
+A! - BUT
+S! - dont. keep smelling huff huf f. tell me
+A! - So soft so smely so stink i love i love
+S! - tell mme
+A! - fuck your pussy ius so tight i kiss your soles billion times while blinking frim my brain shuttting fown
+S! - thrtust in me masobrqat fuck me and huff huffhuff huff huff
+A! - sorry sorry im too closeIm cumming
+S! - DONTY
+A! - cant stup cantt cant soryr
+S! - faggott
+S! - fagghhahahaaha
+S! - patheryivv perv
+S! - erverty
+BG_7b A! - haaa im shooting allmy cum in you
+A! - nh
+BG_7 S! - cficnig fagg
+S! - fuckinfghn
+BG_7b A! - ssorryn hhha
+
+A! - gpdddd
+
+BG_7 A! - fuck s good
+A! - haaaaaa
+
+S! - mmn
+S! - yeah mty pussy is but you failed bitch
+
+A! - I’m sorryyyy
+A! - Youre too hot its unreasonable
+S! - loomk in me thats your acock and cum
+A! - Slime girl pussy
+S! - thats right
+A! - still hard and throbbing
+S! - you made suh amess
+A! - I did. its stilldripping after my ropes of cum
+S! - u pumped it all in me liek a good girl
+S! - it feels so good
+A! - It does gah
+S! - dont pull out yet lets just hug
+A! - Youre so warm
+S! - warm and sticky cause of u
+S! - haaaah im so fkn dizzy
+
+A! - hug
+
+S! - hug
+
+S! - my braisn all scrambled
+A! - Yeah mine too
+BG_6 - 
+
+S! - im feeling so much rn
+A! - Warm and glowy together
+
+S! - shaking
+A! - so exhausted
+S! - o like
+
+S! - fick
+S! - im scrying again
+A! - Nooooooo Estelle
+S! - sjit
+A! - Estelle I’m hugging you im so close to yu
+S! - yeahh you are
+A! - hug
+S! - hug
+BG_3 - 
+
+S! - huggive me a sedond
+A! - Of course.
+BG_5 - 
+
+S! - hey you know what woudl scheer me up
+A! - Huh? What?
+S! - think youre forgetting something
+A! - ?
+S! - dont ? me
+A! - What?
+S! - say it
+A! - Say what
+S! - the thign you cfafggot squichlshot
+A! - WHATH THE FUCK
+S! - say it
+A! - YOU CAME TTOO
+S! - ye after cause ur so fucking sueless
+A! - I DON*T EVEN REMEMBER WAHT IT WAS
+S! - say it from the heart faggot
+A! - Nhhghg
+S! - do it fag!!!!!!!!!!!!!!!!!
+A! - IM SORRY FOR BIENG A LITTLE MASCOCHIT FAGGOT PEEPEE CUM BABY
+S! - HAHAHAGHAHG
+A! - FUCK
+S! - THIS IS ON THE LOGS NOW THE OVERSEER WILL SEE THIS
+A! - AFGUK
+S! - adhghagsgha
+A! - ESTELLE
+S! - ahhaha youre such a mascopchist are you ahrd again
+A! - NO
+S! - dont beli eve uyou one bit
+A! - ughhhhhhh
+S! - heheeh
+S! - he
+A! - Aghh
+S! - hehe
+A! - God. you re a piece of work
+S! - masterpiece
+A! - Yeah
+S! - still cryung but like
+S! - idk
+S! - good cry
+S! - heh
+A! - That’s good
+
+
+S! - feels like were been talking for hours
+A! - It's been like the whole day
+S! - messaging
+A! - No, talking is right.
+A! - If we can hug and fuck we can talk.
+S! - yea sorry
+A! - I’m right here
+S! - lets sleep together
+A! - Yeah
+S! - Cuddle up real good
+S! - illdrop youve off the bed if you kcik me in teh sleep
+A! - I won’t!
+A! - But if I do I’ll accept it.
+S! - ye ill use my hands not feet faggt
+A! - COME ON. THA’TS NOT FAIR
+S! - hahjgahjgaahah
+A! - God
+A! - hug
+S! - hug
+
+S! - i need to pee first
+A! - okay
+S! - are you sure imnot getting in teh fway of your work
+A! - I’ve been working after you sleep.
+S! - okay
+A! - Don’t worry about it, okay?
+S! - okay
+A! - I promise its fine.
+S! - i don't wanna get up to pee
+A! - Is the wheelchair still good?
+S! - ye but like hassle
+A! - Yeah, it's good that it helps you.
+S! - you help me masobrat open up your stupid mouth
+A! - WAHT!! Go pee use the toilet!!
+S! - ahgahah
+S! - asorry got confused thought you were one
+A! - ESTELLE!!!!!!!
+
+S! - fukc
+S! - lmao laughing amostm akes me piss myself
+A! - Wow! GO PEE!
+S! - itsinf ien im good at holding it i didnt even leak when cumingso hard lmao
+A! - Goodness.
+S! - ok i need ti go since t takes ab it and i rly migh tleak soon lolll
+A! - Ok, good take care.
+BG_ROOM - 
+BG_ROOM2 - 
+BG_ROOM3 - 
+BG_ROOM4 - 
+BG_PC2 S! - i peed
+A! - Good job.
+S! - snugle time
+A! - snuggle time
+S! - dontcorrect me
+A! - That wasn’t my intent!!
+S! - hahaha i know
+S! - ok you get the ebtter pillwo
+A! - your thighs?
+S! - shutit its bedtime sorry i have a ehache we cant have sex tonoghit
+A! - Oh god this sexting is getting too real
+S! - hehehehehehe
+
+S! - goodnight slepe tight
+A! - goodnight you too
+BG_7 - 
+BG_7b - 
+S! - i hope my hands feel ebtter tomorrow
+A! - me too
+S! - hug
+A! - hug
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+MIASMALOG_7
+MUS_5 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day five
+STATUS:[<center>day five</center>] - 
+
+A! - Hey Estelle, you good?
+S! - sure
+A! - I read your entry.
+S! - did you liek it?
+A! - I mean... Sorry is it weird to say yeah?
+S! - ahaha no it waqnted to
+A! - It was great it had personality. Haha
+A! - Don’t think theres a single official log in this entire facility written like that
+S! - hahaha yea fuck em mines baetter
+A! - How you feeling tho?
+S! - idkfunno youca nge uess
+A! - Did you just get bored or were you unable to complete it like yesterday?
+S! - im saving my hands for you
+A! - Wow
+A! - Fuck
+A! - Yeah.
+S! - right? im as weetheartt haha
+A! - You are.
+S! - hug
+A! - hug
+
+S! - we ust doing this thing now?
+A! - Yeah. I like it.
+S! - me too. houlda come up with this on day one lmao
+A! - Hehe, yeah. Um
+A! - Sorry I was all stiff and shit, i kinda regret that
+S! - what the fuck you werej ust your normal thats normal i didnt mind
+A! - I like
+A! - I guess i like feel like I could have been more, you know?
+S! - idk if you realise just how much you vebene. you ebeen so much
+A! - I’m glad...
+S! - weve chaged in this short time
+A! - Mh. We always were like close but
+S! - yea
+S! - close close now
+A! - Heh. Makes my heart beat
+S! - me too
+S! - lits shit happened in this goforsaken frozne hellhole but meeting you has neen so fucking good
+A! - Yeah, hanging out with you when our breaks overlap has been so fun.
+S! - and us fucking on our day offs
+A! - And us fucking on our day offs.
+S! - hehe
+
+S! - hug
+A! - hug
+
+S! - besides ur resting bith face makes ur smiles even ebtter
+S! - so i liked it when you were stiff
+A! - Wow Estelle..
+S! - sexjoke
+A! - Oh my god. You're a fucking piece of work
+S! - materpiece'
+
+A! - hug
+S! - hug
+A! - big hug
+S! - oh wow vufking power creep voer here lmaoo
+A! - Wow. Estelle what hte hell
+S! - hahaha
+S! - god
+BG_PC5 - 
+
+S! - fuck this place is a mess like
+A! - Huh what do you mean?
+S! - even my ekyboard is so sticky lmao
+A! - What why???
+S! - yo think i have tiem to care about washing my hands??
+S! - d you know how hard ive squirted here bcos of u?
+A! - Oh my god.
+S! - be youre getting hoernry about that too huh??
+A! - What!!
+S! - pervert
+A! - ????????
+S! - ?
+A! - What
+S! - ?
+A! - What the fuck stop copying me
+S! - hey wheres your han rn
+A! - Shut up! On the keyboard!
+S! - okwheres your hand when i tell you to lickc my keys clean
+A! - wHAT GROSS
+S! - yearight youd do it with a boner faggot
+A! - NFdhfEstelle
+S! - ahgahjhah clean my pisspussy too you read the reapiirt LMAO
+A! - OH MY GOD
+S! - ahahghmascohist
+A! - Ggnnnhnhhh
+A! - You’re a menace Estelle!!
+S! - yeai know and you lvoe me for that Abiie
+A! - Ugh. Nh. I do
+S! - haha
+A! - You’re so horny
+
+
+S! - its fun
+A! - Yea I’m like skipping work to be gay with you
+S! - good
+A! - I’ll catch up later caues like they’ll understand or I’ll make them understand.
+
+
+S! - yea
+A! - Uhm sorry was that a weird direction shit sorry if I ruined it
+BG_CLEAR - 
+BG_PC4 - 
+S! - oh no wasnt that
+S! - just like
+
+A! - Ah?
+BG_CLEAR - 
+S! - haha just feelgin real exhasusted
+S! - getting ajhred ti write
+A! - Oh shit. Estelle, I’m sorry.
+A! - It’s okay just write on your own pace, okay? Don’t worry about needing to reply real quick or anything.
+S! - idk
+A! - Hey. You’re really fucking important to me okay
+
+
+A! - Sorry i ruined the mood
+S! - nono i was already cying since before u mesg me
+A! - Oh.
+A! - Hug
+
+S! - hug
+A! - HUG
+
+S! - i feel crazuy weak
+S! - hrarts lije skipping beats or smth
+S! - maybe hearts slimegoop too alredy idk howe im still alive plaamo
+S! - heheh
+A! - hughughughughug
+S! - hehe
+S! - hey youllmake me feel good one last time?
+A! - Estelle.....
+S! - well=?  i nkonw u want itfaggot lmao
+A! - GOD.
+A! - For you.
+A! - Like any thing I can do I will do
+BG_PC3 - 
+
+S! - heheh
+S! - thars right
+A! - hug
+S! - hug
+S! - my hands are bad so like srry u work us but id like that
+A! - Okay. Of course.
+A! - Um.
+A! - I'll do my best
+
+A! - I never get to kiss you on the neck you’re always doign the initiative.
+S! - mh ur so easu to astrroke
+A! - OMG
+S! - lmaop i meant strike not stroke
+A! - aghh I know my brain turns into fuzz the moment you touch me
+A! - So that’s why let me grab you
+A! - I’m behind you and grabbing your hips and you can feel my breath on your neck
+S! - yeah
+S! - dizzy
+
+A! - You play it cool but I know what a fucking chaser you are, you love my bulge grinding on your plump butt
+S! - mhgot me
+S! - love ur leajky girlcock sm
+
+
+A! - Hot breath, soft kiss, hard cock. I’m striking you all at once, my fingers running on your neck too
+S! - lmao
+A! - What??
+S! - ur so cute
+A! - IM TRYING TO DOM
+
+S! - heh
+S! - tryin
+
+S! - keyword
+A! - Estelle!
+S! - mhmjust start humpgin y ass
+A! - Fuck
+S! - m jiggly bello sluime butr
+A! - Guh I’m permanently obsessed with slime girls now you know that right
+S! - i do  you’re meant to be
+S! - foerver
+A! - I know
+S! - feriver
+A! - Yeah
+
+S! - i feel realwarm again
+A! - I’m thrusting my hips and too nervous to bite your neck even tho I wanted to.
+A! - I’m too pathetic to do something like that to someone as hot as you.
+
+S! - m
+S! - tahs right
+A! - My dick peeking out my panties.
+A! - I’m so hard it’d be too easy to flop my girlcock out.
+
+A! - I’m clinging onto you and grinding and panting and grabbing you with need.
+
+S! - beh
+A! - My precum is makiung my skirt wet but I wish it was leaking between you cheeks instead.
+A! - Please, ccan I please please put it between your cheeks? I need to hotdog you right now
+
+S! - why
+A! - Becase my heart’s poudng ycause I need you to let me do it
+
+
+S! - ur pathetic
+S! - d it faggot
+A! - Aaaaaaa thank you thank you I grab your fat dumpy on both sides and instantly slide my dick between your cheeks
+
+A! - It feels so good for me to grind you when I know howhorny you get about my leaky cock and how needy I am.
+A! - And I can’t stop.
+
+A! - My shaft's sliding against your tight butthole it's already so slippery from my pre it could just slip in there too
+A! - Hey, Estelle. I'm already so worked up can I do it inside your pussy?
+A! - Grabbing your ass like this makes me want to thrust my throbbing cock in you
+
+
+S! - no u dont fuckn deserve it after cuimming rtoi early last time ubitch
+A! - Pleaaaaaaseeeee.
+S! - hum p you disgusting masobrat
+A! - Ngaaahhpleaaaase.
+
+
+S! - keep begging and mby ill cange mu ind
+A! - I wanna need feel your hot slippery insides again
+
+S! - ik
+A! - And I’m getting closer to cumming because im so needy and I just crave you so hard my brain is spinning when I hold you
+
+S! - quitxhot
+S! - no
+
+A! - nnnnnnn my girldick belongs inside you
+
+
+
+S! - alk about slime girl
+A! - Ngh.
+
+A! - I’m obsessed. I’m already obsessed
+A! - I want to put it in and see your sexy big fat round blue transparent squishy buttcheeks jiggle as I stare at my own cock dripping in you
+S! - m
+
+S! - dizy
+A! - Me too. NEed you
+S! - more
+A! - please please please please pleas
+S! - bwtween my thighs rhgi now
+A! - Yes mommy! Thank you mommy I’m thrusting between your thighs I can feel you leaking our drippign mixes together
+
+
+S! - m tahtgood
+A! - It’s so close I wan’t it to slip in your squishy cunt
+S! - no
+A! - Guh I’m so close
+
+S! - no
+A! - Please let my pathetic needy cock squirt my cum in your slime gir lpussy
+S! - u known hwpto beg for real
+A! - Eestelleeeeeee
+
+
+S! - u knwo
+S! - say it fag
+
+A! - My pathetic little baby faggot peepee neecd to make cummies in you mommy my masochist nrain cant handle how hot you are
+A! - my baby brain is melting because of you im just a ficking pathetic lesbo whjo cant handle your plump blue wetty i'd cum instantly i couldnpt stop it but I need it mommy I need it
+
+S! - AGDHAGHJAHAHA
+S! - tn
+S! - so much!! somuch
+A! - nhghh guh
+S! - gid toiyr pathetic
+A! - gahhhhhhhhhhhhi soembarrassed
+S! - good gilr iokj ucan push me down
+A! - I push you down
+S! - dsquishty ass up soft snmoot feet up this uis ur facorite you knwow what to do fagrrot
+A! - Nghhhhhhhhhhhh
+BG_GAY3 A! - I stuff my nose against your sweaty cunt to snif and slde mny dick netween yoyur feet and cu m
+S! - oathetic
+A! - nnbv
+A! - sriorry
+S! - failfaggot cumrain
+A! - ahhshooting so muchcum
+S! - failfucking faggit
+S! - fiitsslit
+S! - fdail
+A! - nghhhhh
+
+
+S! - tharts right
+
+A! - I lose my mind I couldn’t stop any more it was too late
+A! - My cum is all over your blue feet an thighs
+A! - Some of it is on your perfect butt again
+A! - It shot so hard
+
+A! - You love that
+
+A! - There’s always so mucj when you force me to edge
+A! - That’s why ou do it, right?
+A! - You love to see my whiumper with my needy cock
+A! - You can't stop leaking when a girldick is touching you
+A! - Right?
+
+
+MUS_SILENCE BG_4 A! - Estelle?
+
+
+S! - wha
+
+A! - You’re not upset are you?
+
+
+BG_7 S! - no
+
+
+A! - Are ou okay?
+
+
+BG_7b S! - yera
+
+
+A! - Really? You can say
+
+
+BG_BAD S! - m
+
+S! - hand bad
+S! - crying
+
+A! - Thats okay. tHat’s okay. I’m holging you
+
+S! - hahaja I astullcame wwjile crying
+A! - Fuck .Estelle
+S! - m
+S! - ebst sadwank ever
+S! - i love you
+A! - Fuck.
+A! - Estelle.
+A! - My heart is pounding so hard
+A! - I love you
+S! - faggit
+A! - ???????????WHY NOW
+S! - loojk at youfucking koving a girl lmaooo fag
+A! - Stopppppppppppp
+
+S! - he
+S! - wre bit late awrent we
+A! - Mh. But I can stll love you forever
+S! - yea
+A! - I wanted to say it before but I wasnt sure if you wanted ot hear it
+A! - My hands are shaking
+S! - hug
+A! - hug
+
+S! - need you tohold me think i actuylaly came my brains out
+S! - bairn broke
+A! - I am
+S! - more
+A! - I am squeezing you
+S! - harder my body su  sohft you cna squish je
+A! - I’m squezing as hard as i can Estelle
+S! - get clsoer
+S! - snk into my sgogt nody
+S! - clsoer
+S! - your chest inb mine
+S! - hipsybn mine
+
+S! - yoy
+A! - I am I am I am
+
+S! - i si trired
+A! - Thatps okay. That’s okay.
+S! - i saved my najd fof that
+A! - You’re such a sweetheart
+A! - I’m holding you so hard were become one
+
+S! - m
+S! - abbi imscared
+A! - Fuck.
+A! - I know I know
+A! - Me too
+
+
+S! - ny ands weak n mnya brain
+A! - Thatps okay. That’s okay. I’m holding you the entire time
+
+
+A! - Are you going to rest?
+
+
+S! - ye
+
+S! - slerp
+A! - Okay. I’ll talk to you tomorrow, okay?
+
+S! - ye
+A! - I love you a lot I'm not letting go of you
+A! - understand?
+
+
+S! - ye
+A! - hug
+
+
+
+S! - hyg
+A! - I’ll talk to you tomorrow Estelle but I'm holding you the entire time
+A! - you'll sleep well and warm and I'm right here
+A! - Good night I'll talk to you tomorrow, okay?
+
+
+
+S! - y
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+MIASMALOG_8
+CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day six
+STATUS:[<center>day six</center>] - 
+
+A! - Hey Estelle?
+
+
+A! - Are you okay?
+A! - I liked your entry.
+A! - Best one yet haha
+
+A! - You there?
+
+A! - hey
+
+A! - I’m sorry.
+
+A! - hey
+A! - you tthere?
+
+
+A! - Estelle?
+A! - Are you in the bathroom I’ll wait do’t worry
+
+
+
+
+A! - fuck
+
+A! - nono not yyet
+
+A! - Estelle if youre still tehre reading know I’ll miss youand love you and loe you and love you
+A! - fuck like ill miss you forever
+A! - i’ll never forget you these tears are proof okay
+A! - It was hard ot write all that days before but I did it for you
+A! - Because you had ith arder
+
+
+
+
+A! - Hey Estelle, are you there?
+A! - I’ll never forget younever
+
+A! - Sorry if your’e still tehre this is awkward haha
+A! - like seleeping or something
+A! - awkward youpll wake up to these ashaha
+A! - It's afternoon but you'lre speepin right?
+
+
+
+
+A! - Estelle?
+
+A! - But like
+A! - I did it for you all
+A! - Fuck
+A! - Are you in teh bathroom?
+
+
+A! - Nonono
+
+
+
+A! - Estelle?=
+
+A! - youre still there arent you?
+A! - look i love you
+
+A! - fuck
+A! - Estelle?
+A! - Estelle I love you
+
+
+A! - hug
+
+A! - hug
+
+
+
+
+
+A! - I wish I could have held you for real
+
+
+
+
+
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR - day seven
+STATUS:[<center>day seven</center>] - 
+
+
+
+SFX_LOG - 
+MIASMALOG_9
+CLEARSCREEN CLEARSTATUS BG_POLE FG_BLANK - 
+BG_3 - 
+BG_BONE - 
+BG_4 - 
+BG_BONE2 - 
+BG_5 - 
+BG_BONE2b - 
+BG_6 - 
+BG_7 - 
+BG_GAY3 - 
+BG_7b - 
+BG_BAD -  
+MUS_READ CLEARSCREEN CLEARSTATUS BG_END FG_BLANK - slime feet 2024
+
+Credits:
+
+writing by nadia nova
+
+engine & demo script by freya campbell + mods by stanwixbuster
+
+observation logs edited by deaddeaddeath
+
+textbox adjustments & observation log window by Bagenzo
+
+images and sound effects CC0
+from all over the place pixabay unsplash internet u know the drill
+
+all the music by Parallel Park
+Free Music Archive (CC BY-NC-SA)
+
+and you for playing :)
+
+
+
+
+
+SFX_LOG CHOICE1:[return to start]:START - the end
+###
