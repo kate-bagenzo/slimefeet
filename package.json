@@ -1,8 +1,16 @@
 {
   "name": "slimefeet",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "slime feet (https://nadianova.itch.io/slime-feet) repackaged in an electron app",
   "main": "index.js",
+  "build": {
+		"dmg": {
+			"icon": false
+		},
+		"linux": {
+			"target": ["AppImage"]
+		}
+	},
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "npm run dev",
