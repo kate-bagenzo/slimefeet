@@ -1,6 +1,6 @@
 {
   "name": "slimefeet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "slime feet (https://nadianova.itch.io/slime-feet) repackaged in an electron app",
   "main": "index.js",
   "scripts": {
