@@ -1,28 +1,16 @@
 {
   "name": "slimefeet",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "slime feet (https://nadianova.itch.io/slime-feet) repackaged in an electron app",
   "main": "index.js",
-  "build": {
-		"dmg": {
-			"icon": false
-		},
-		"linux": {
-			"target": ["AppImage"]
-		}
-	},
   "scripts": {
-    "postinstall": "electron-builder install-app-deps",
     "start": "npm run dev",
-    "dev": "electron .",
-    "build": "electron-builder",
-		"release": "electron-builder"
+    "dev": "electron ."
   },
   "author": "nadia nova, freya campbell, stanwixbuster, kate bagenzo",
   "license": "UNLICENSED",
   "devDependencies": {
-    "electron": "^34.2.0",
-    "electron-builder": "^25.1.8"
+    "electron": "^34.2.0"
   },
   "type": "module"
 }
