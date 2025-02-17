@@ -215,6 +215,17 @@
     padding:4vh;
   }
 
+  #fullscreen {
+    font-size:3vh;
+    display:inline-block;
+    margin-top:1vh;
+  }
+
+  #fullscreen:hover {
+    color: #e60017;
+    cursor: pointer;
+  }
+
   #settings-window input[type='range'] {
     width:96%;
     margin-bottom:5%;
