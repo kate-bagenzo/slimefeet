@@ -61,17 +61,7 @@ jobs:
           CERTIFICATE_WINDOWS_PFX: ${{ secrets.CERTIFICATE_WINDOWS_PFX }}
 
       - name: Set up Electron app environment
-        working-directory: ./app
         run: npm install
-
-      - name: move webapp into Electron folder
-        run: |
-          cp -r ./src/* ./app/src
-          mv ./icon.png ./app
-
-      - name: Generate icons
-        working-directory: ./app
-        run: npm run build-icons
 
       - name: Add MacOS certs
         if: matrix.os == 'macos-latest'
