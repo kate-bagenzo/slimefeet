@@ -75,7 +75,6 @@ jobs:
           fs.writeFileSync('./package.json',JSON.stringify(pkg,undefined,'\t'));"
           
       - name: Build the app
-        working-directory: ./app
         env:
           APPLE_ID: ${{ secrets.APPLE_ID }}
           APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
