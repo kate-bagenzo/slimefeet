@@ -7,8 +7,8 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "npm run dev",
     "dev": "electron .",
-    "build": "electron-builder --mac --windows --linux",
-		"release": "electron-builder --mac --windows --linux --publish always"
+    "build": "electron-builder",
+		"release": "electron-builder"
   },
   "author": "nadia nova, freya campbell, stanwixbuster, kate bagenzo",
   "license": "UNLICENSED",
