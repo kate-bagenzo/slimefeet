@@ -416,6 +416,7 @@ function updateDialog(str) {
 
     if (lookForMIASMA.test(str)) {
         console.log("MIASMA LOG FOUND")
+        console.log(`log is ${str}`)
         const log = document.querySelector('#MIASMA')
         const miasma = str;
         if (miasma == "MIASMALOG_1") {

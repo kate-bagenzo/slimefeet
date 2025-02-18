@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const createWindow = () => {
     const win = new BrowserWindow({
         backgroundColor: '#000000',
-        autoHideMenuBar: true,
+        //autoHideMenuBar: true,
         fullscreen: true,
         width: 1280,
         height: 800,
@@ -16,7 +16,7 @@ const createWindow = () => {
             preload: path.join(__dirname, 'preload.js')
         }
     });
-    win.removeMenu();
+    //win.removeMenu();
     win.loadFile('src/index.html');
 }
 
