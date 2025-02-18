@@ -419,7 +419,7 @@ function updateDialog(str) {
         console.log(`log is ${str}`)
         const log = document.querySelector('#MIASMA')
         const miasma = str;
-        if (miasma == "MIASMALOG_1") {
+        if (miasma.includes("MIASMALOG_1")) {
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -436,7 +436,7 @@ function updateDialog(str) {
 
             `
         }
-        if (miasma == "MIASMALOG_2") {
+        if (miasma.includes("MIASMALOG_2")) {
             log.innerHTML = `
             <p>Miasma End Entry #: 5-1</p>
             <p></p>
@@ -454,7 +454,7 @@ function updateDialog(str) {
             <center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_3") {
+        if (miasma.includes("MIASMALOG_3")) {
             log.innerHTML = `
             <br>Important notice to all personnel.
             <br>
@@ -469,7 +469,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_4") {
+        if (miasma.includes("MIASMALOG_4")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-2
             <br>
@@ -485,7 +485,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_5") {
+        if (miasma.includes("MIASMALOG_5")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-3
             <br>
@@ -501,7 +501,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>            
             `
         }
-        if (miasma == "MIASMALOG_6") {
+        if (miasma.includes("MIASMALOG_6")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-4
             <br>
@@ -515,7 +515,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>            
             `
         }
-        if (miasma == "MIASMALOG_7") {
+        if (miasma.includes("MIASMALOG_7")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-5
             <br>
@@ -528,7 +528,7 @@ function updateDialog(str) {
             <center><button id="endlog">end of entry lol</button></center>
             `
         }
-        if (miasma == "MIASMALOG_8") {
+        if (miasma.includes("MIASMALOG_8")) {
             log.innerHTML = `
             <br>mmaisma end entry  5-6
             <br>
@@ -540,7 +540,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">end of entry</button></center>
             `
         }
-        if (miasma == "MIASMALOG_9") {
+        if (miasma.includes("MIASMALOG_9")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-7
             <br>Terese Hillevi<br>
