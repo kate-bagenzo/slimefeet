@@ -566,6 +566,8 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
+            toggleAutoplay();
+            toggleAutoplay();
         }));
         
         return
@@ -958,9 +960,10 @@ function updateDialog(str) {
 
 };
 
-function calcAutoSpeed() {
+function calcAutoSpeed() { 
     let settingsSpeed = localStorage.getItem("settingsAutoplaySpeed");
-    let speed = (settingsSpeed * document.getElementById('text3').innerHTML.length) - (document.getElementById('text3').innerHTML.length * 8);
+    let speed = settingsSpeed + (document.getElementById('text3').innerHTML.length * 0.5); // uhhhhhhhhhhhhhh i changed this line i hope it dont blow the fuck upppp
+
     if (speed < settingsSpeed * autoplayLengthOffset) speed = settingsSpeed * autoplayLengthOffset;
 
     //console.log(speed);
