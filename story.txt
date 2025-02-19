@@ -91,7 +91,7 @@ A! - You always joked about that.
 S! - I mean, you too. You still have time. Lmao.
 A! - I only accept S rank deaths.
 A! - I'll try not to.
-S! - You're a S rank dork lmao.
+S! - You're an S rank dork lmao.
 S! - Hmph, lucky you.
 A! - What even happened?
 BG_3 - 
