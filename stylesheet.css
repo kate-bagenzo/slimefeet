@@ -336,6 +336,7 @@
   -ms-overflow-style: scrollbar;
   scrollbar-width: auto;
   scrollbar-color: #dcdcb6 #3f3f3f;
+  overflow-x: hidden;
 }
 
 .miasmalog button {
