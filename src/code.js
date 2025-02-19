@@ -143,11 +143,16 @@ function readyStory () {
     });
 
     document.getElementById('quit').addEventListener("click", (event) => {
-        if (pauseInput || inMenu) return;
-        document.getElementById('quit-window').classList.remove("hidden");
-        document.getElementById('quit').classList.add("menuOpen");
+        if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+            if (pauseInput || inMenu) return;
+            inMenu = true;
+            document.getElementById('quit-window').classList.remove("hidden");
+            document.getElementById('quit').classList.add("menuOpen");
+        }
+
     });
     document.getElementById('quit-window-no').addEventListener("click", (event) => {
+        inMenu = false;
         document.getElementById('quit-window').classList.add("hidden");
         document.getElementById('quit').classList.remove("menuOpen");
     });
@@ -1120,24 +1125,27 @@ function logMessage(speaker, speakerclass, text) {
 };
 
 function togglehistory() {
-    document.getElementById('historybutton').classList.toggle("menuOpen")
-
-    document.getElementById('messagecontainer').classList.toggle('hidden');
-    document.getElementById('messagelog').classList.toggle('hidden');
-    document.getElementById('fg1').classList.toggle('hidden');
-    inMenu = !inMenu;
-
+    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('settings-window').classList.contains('hidden')) {
+        document.getElementById('historybutton').classList.toggle("menuOpen")
+    
+        document.getElementById('messagecontainer').classList.toggle('hidden');
+        document.getElementById('messagelog').classList.toggle('hidden');
+        document.getElementById('fg1').classList.toggle('hidden');
+        inMenu = !inMenu;
+    }
 }
 
 function toggleSettings() {
-    document.getElementById('settings').classList.toggle("menuOpen")
-
-    document.getElementById('settings-window').classList.toggle('hidden');
-        if (document.getElementById('settings-window').classList.contains('hidden')) {
-            inMenu = false;
-        } else {
-            inMenu = true;
-        }
+    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+        document.getElementById('settings').classList.toggle("menuOpen")
+    
+        document.getElementById('settings-window').classList.toggle('hidden');
+            if (document.getElementById('settings-window').classList.contains('hidden')) {
+                inMenu = false;
+            } else {
+                inMenu = true;
+            }
+    }
 }
 
 function sliderInvertValue(minVal, maxVal, curVal) {
