@@ -12,8 +12,8 @@ const createWindow = () => {
         fullscreen: true,
         width: 1600,
         height: 1000,
-        minWidth: 1200,
-        minHeight: 800,
+        minWidth: 1600,
+        minHeight: 1000,
         icon: path.join(__dirname, "./src/slimefeet.png"),
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')

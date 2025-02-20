@@ -178,9 +178,16 @@ function readyStory () {
     })
 
     document.getElementById("curtain").addEventListener("click", (event) => {
+        musicPlayer("MUS_PC");
         document.getElementById("curtain").style.opacity = "0";
         document.getElementById("curtain").style.pointerEvents = "none";
+        sfxPlayer("SFX_LOG");
+    });
+    document.getElementById("curtain-2").addEventListener("click", (event) => {
+        document.getElementById("curtain-2").style.opacity = "0";
+        document.getElementById("curtain-2").style.pointerEvents = "none";
         pauseInput = false;
+        musicPlayer("SFX_LOG");
     });
     console.log('action!');
 };
