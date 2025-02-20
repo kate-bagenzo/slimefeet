@@ -226,6 +226,16 @@
     cursor: pointer;
   }
 
+  #close-settings {
+    font-size:2vh;
+    margin-top:1vh;
+  }
+
+  #close-settings:hover {
+    color: #e60017;
+    cursor: pointer;
+  }
+
   #settings-window input[type='range'] {
     width:96%;
     margin-bottom:5%;

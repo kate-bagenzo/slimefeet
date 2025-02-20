@@ -165,6 +165,10 @@ function readyStory () {
         clearSave();
     });
 
+    document.getElementById('close-settings').addEventListener("click", () => {
+        toggleSettings();
+    })
+
     document.getElementById("curtain").addEventListener("click", (event) => {
         document.getElementById("curtain").style.opacity = "0";
         document.getElementById("curtain").style.pointerEvents = "none";
