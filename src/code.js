@@ -131,7 +131,15 @@ function readyStory () {
             progress();
         }
     };
-    document.getElementById('settings').onclick = function() {
+    document.getElementById('main').onclick = function() {
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
+    };
+    document.getElementById('settings').onclick = function(e) {
         toggleSettings();
     };
 

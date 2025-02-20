@@ -11,6 +11,4 @@ push any change to git on the main branch
 github actions will then create builds for windows/mac/linux under the "releases" section
 
 ### todo
-- click anywhere to proceed
-- close buttons for settings/history
 - second splash screen
