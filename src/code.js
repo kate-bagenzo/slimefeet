@@ -124,7 +124,12 @@ function readyStory () {
     document.getElementById('messagelog').classList.toggle('hidden');
     document.getElementById('messagecontainer').classList.toggle('hidden');
     document.getElementById('dial').onclick = function() {
-        if (!autoplay && !pauseInput && !inMenu) {progress();}
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
     };
     document.getElementById('settings').onclick = function() {
         toggleSettings();
@@ -257,10 +262,11 @@ function logKey(e) {
             toggleSettings();
             break;
         case " ":
-            if (!autoplay) {progress();}
-            break;
         case "Enter":
-            if (!autoplay) {progress();}
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
             break;
         default:
             target = e.keyCode - 49;
