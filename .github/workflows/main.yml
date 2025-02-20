@@ -84,13 +84,6 @@ jobs:
           WINDOWS_PFX_PASSWORD: ${{ secrets.WINDOWS_PFX_PASSWORD }}
         run: npm run make
 
-      - name: Publish to GitHub Pages
-        if: env.PUBLISH_ON_WEB
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src
-
       # If there is no passed-in tag, we auto-generate one based on run number
       # This makes sure a different process (e.g. a Windows build vs Mac build) hasn't created it
       - name: Check if auto-generated tag exists
