@@ -1,10 +1,5 @@
 START
-CLEARSCREEN CLEARSTATUS SFX_TITLE BG_TITLE - videotome adventure v0.5
-engine & demo script by freya campbell + mods by stanwixbuster
-
-slime feet is made for Videotome Jam "Waiting" & Yuri Game Jam 2024
-slime feet is best experienced in full screen
-
+CLEARSCREEN CLEARSTATUS SFX_TITLE BG_TITLE - 
 STATUS:[<center>body horror</center>] - slime feet is about body horror
 STATUS:[<center>body horror<br>foot fetishism</center>] - slime feet is about extravagant foot fetishism
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex</center>] - slime feet is about sloppy messy lesbian cybersex
@@ -14,6 +9,11 @@ STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot<br>d
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot<br>death<br><br>i love you</center>] - slime feet is about you knowing i love you
 
 slime feet is about to start right now
+
+
+
+
+
 CLEARSCREEN CLEARSTATUS IMAGE:BG_CLEAR:back:0:0 - 
 SFX_SKI MUS_INTRO IMAGE:BG_SKI - It's cold.
 The airlock latch is pissing me off.
@@ -21,8 +21,8 @@ I roll my shoulder still stiff after fighting that frozen piece of shit open and
 With the aid of my poles, my weight shifts from side to side as I ski onwards in the crystal clean snow.
 This was just another day.
 
-IMAGE:BG_1b - As my skis slide over the untouched snowy ground the squeaking of snow keeps me grounded.
-With the absense of wind the only sounds I hear is mine.
+IMAGE:BG_1b - As my skis slide over the untouched pure white powder, the squeaking of the snow keeps me grounded.
+With the absence of wind the only sounds I hear is mine.
 Even in my sweaty suit I'm painfully aware the outside temperature is instant death for a human like me.
 
 IMAGE:BG_0 - Countless people have asked the same question before me;
@@ -106,7 +106,7 @@ S! - Fuck, I've done that so many times and the real S hazard is boredom.
 A! - We always need to be careful here. Always.	But like I guess it's true the hazards usually never come this close.
 S! - Yeah! It wasn't my fault! Well, it was. Fuck.
 S! - The latch breaking was the problem, not me spacing out for a bit!
-S! - I just noticed it was close and had plenty time to leave, but not just the latch, the fucking shutter broke too.
+S! - I suddenly noticed that thing was in my view and felt like I had plenty time to leave. But not just the latch, the fucking shutter broke too.
 S! - Seriously?
 S! - Two malfunctions on one trip? Last time that happened was like //050 or something.
 A! - I'm sorry.
@@ -119,7 +119,7 @@ S! - You're an idiot, you know that right?
 A! - You keep trying to convince me.
 S! - You should try to convince The Overseer to let you come visit me.
 A! - What? I can't do that. Quarantine, remember?
-S! - So what, I'm already gonna die, doesn't matter if you infect me or whatever.
+S! - So what? I'm already gonna die, doesn't matter if you infect me or whatever.
 A! - But what if you're infected? Then I'll get sick.
 S! - Honestly, I bet this miasma is gonna destroy any pathetic little virus on me.
 A! - What are we even quarantined for? I didn't read the report.
@@ -1528,26 +1528,24 @@ BG_7 -
 BG_GAY3 - 
 BG_7b - 
 BG_BAD -  
-MUS_READ CLEARSCREEN CLEARSTATUS BG_END FG_BLANK - slime feet 2024
+MUS_READ CLEARSCREEN CLEARSTATUS BG_END FG_BLANK - slime feet 2025
 
-Credits:
+slime feet was originally made for Videotome Jam "Waiting" & Yuri Game Jam 2024
 
-writing by nadia nova
+CREDITS:
 
-engine & demo script by freya campbell + mods by stanwixbuster
+game by nadia nova
 
-observation logs edited by deaddeaddeath
+Videotome:ADV engine by freya campbell (CC BY-NC-ND)
+mods by stanwixbuster
+additional work by kate bagenzo
 
-textbox adjustments & observation log window by Bagenzo
+observation logs by deaddeaddeath
 
-images and sound effects CC0
-from all over the place pixabay unsplash internet u know the drill
-
-all the music by Parallel Park
+music by Parallel Park
 Free Music Archive (CC BY-NC-SA)
 
 and you for playing :)
-
 
 
 
