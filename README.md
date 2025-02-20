@@ -10,3 +10,8 @@ push any change to git on the main branch
 (if you have nothing to change and just want to force a new build, increase the version number in `package.json` )
 github actions will then create builds for windows/mac/linux under the "releases" section
 
+### todo
+- click/space to end automode
+- click anywhere to proceed
+- close buttons for settings/history
+- second splash screen
