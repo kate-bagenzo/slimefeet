@@ -56,9 +56,16 @@
     text-align:center;
     transition:0.5s;
     background-image: url('images/logo_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+  }
+
+  #curtain-2 img {
+    min-width: 40%;
   }
 
   #main {
