@@ -124,9 +124,22 @@ function readyStory () {
     document.getElementById('messagelog').classList.toggle('hidden');
     document.getElementById('messagecontainer').classList.toggle('hidden');
     document.getElementById('dial').onclick = function() {
-        if (!autoplay && !pauseInput && !inMenu) {progress();}
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
     };
-    document.getElementById('settings').onclick = function() {
+    document.getElementById('main').onclick = function() {
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
+    };
+    document.getElementById('settings').onclick = function(e) {
         toggleSettings();
     };
 
@@ -159,6 +172,10 @@ function readyStory () {
     document.getElementById('quit-window-yes').addEventListener("click", (event) => {
         clearSave();
     });
+
+    document.getElementById('close-settings').addEventListener("click", () => {
+        toggleSettings();
+    })
 
     document.getElementById("curtain").addEventListener("click", (event) => {
         document.getElementById("curtain").style.opacity = "0";
@@ -257,10 +274,11 @@ function logKey(e) {
             toggleSettings();
             break;
         case " ":
-            if (!autoplay) {progress();}
-            break;
         case "Enter":
-            if (!autoplay) {progress();}
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
             break;
         default:
             target = e.keyCode - 49;
@@ -566,6 +584,8 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
+            toggleAutoplay();
+            toggleAutoplay();
         }));
         
         return
@@ -958,9 +978,10 @@ function updateDialog(str) {
 
 };
 
-function calcAutoSpeed() {
+function calcAutoSpeed() { 
     let settingsSpeed = localStorage.getItem("settingsAutoplaySpeed");
-    let speed = (settingsSpeed * document.getElementById('text3').innerHTML.length) - (document.getElementById('text3').innerHTML.length * 8);
+    let speed = settingsSpeed + (document.getElementById('text3').innerHTML.length * 0.5); // uhhhhhhhhhhhhhh i changed this line i hope it dont blow the fuck upppp
+
     if (speed < settingsSpeed * autoplayLengthOffset) speed = settingsSpeed * autoplayLengthOffset;
 
     //console.log(speed);
