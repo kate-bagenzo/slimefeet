@@ -295,7 +295,6 @@
 
   .dialog1, .dialog2, .dialog3, .dialog4, .dialog5 { 
     height: 30%;
-    width: 90%;
     padding: 2vh;
     display: flex;
     flex-direction: row;
