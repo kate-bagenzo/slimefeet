@@ -20,13 +20,13 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.6.1",
     "@electron-forge/plugin-fuses": "^7.6.1",
     "@electron/fuses": "^1.8.0",
-    "electron": "^34.2.0"
+    "electron": "^24.8.1"
   },
-      "packagerConfig": {
-        "icon": "src/slimefeet.png"
-      },
-  "type": "module",
+  "packagerConfig": {
+    "icon": "src/slimefeet.png"
+  },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "electron-squirrel-startup": "^1.0.1",
+    "steamworks.js": "^0.4.0"
   }
 }
