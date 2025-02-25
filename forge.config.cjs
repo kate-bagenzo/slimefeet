@@ -4,19 +4,8 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: 'favicon',
-    unpack: "*.{node,dll,so}",
-    unpackDir: "node_modules/steamworks.js/dist/**/"
+    icon: 'favicon'
   },
-  extraResource: [
-    "./node_modules/steamworks.js/dist/win64/steam_api64.dll",
-    "./node_modules/steamworks.js/dist/win64/steam_api64.lib",
-    "./node_modules/steamworks.js/dist/linux64/libsteam_api.so",
-    "./node_modules/steamworks.js/dist/linux64/steamworksjs.linux-x64-gnu.node",
-    "./node_modules/steamworks.js/dist/osx/libsteam_api.dylib",
-    "./node_modules/steamworks.js/dist/osx/steamworksjs.darwin-arm64.node",
-    "./node_modules/steamworks.js/dist/osx/steamworksjs.darwin-x64.node",
-  ],
   rebuildConfig: {},
   makers: [
     {
