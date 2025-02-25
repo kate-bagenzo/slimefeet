@@ -22,11 +22,12 @@
     "@electron/fuses": "^1.8.0",
     "electron": "^34.2.0"
   },
-      "packagerConfig": {
-        "icon": "src/slimefeet.png"
-      },
+  "packagerConfig": {
+    "icon": "src/slimefeet.png"
+  },
   "type": "module",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "electron-squirrel-startup": "^1.0.1",
+    "steamworks.js": "^0.4.0"
   }
 }
