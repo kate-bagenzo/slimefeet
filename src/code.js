@@ -1,3 +1,4 @@
+const { ipcRenderer } = require('electron');
 /*
  __   __  __   ____   _____   ___   ______   ___   __   __  _____ 
 |  | |  ||  | |    \ |     | /   \ |      | /   \ |  |_|  ||     |
@@ -455,6 +456,7 @@ function updateDialog(str) {
         const log = document.querySelector('#MIASMA')
         const miasma = str;
         if (miasma.includes("MIASMALOG_1")) {
+
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -1188,6 +1190,17 @@ function sliderInvertValue(minVal, maxVal, curVal) {
   newVal = parseInt(minVal) + parseInt(newVal); // I HATE JS I HATE JS I HATE JS I HATE JS
   return newVal;
 }
+
+//electron
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('quit-window-yes').addEventListener('click', () => {
+        ipcRenderer.invoke('quit-app');
+    });
+    document.getElementById('fullscreen').addEventListener('click', () => {
+      ipcRenderer.invoke('fullscreen-app');
+  });
+  });
+  
 
 /* 
 
