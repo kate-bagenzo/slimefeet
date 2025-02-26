@@ -272,7 +272,7 @@
     border: 2px solid #fff;
     position:absolute;
     margin:30vh 35vw;
-    z-index:10;
+    z-index:9999999999;
     color:#fff;
     font-size:2vh;
     padding:4vh;

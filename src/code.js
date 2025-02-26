@@ -1,3 +1,4 @@
+const { ipcRenderer } = require('electron');
 /*
  __   __  __   ____   _____   ___   ______   ___   __   __  _____ 
 |  | |  ||  | |    \ |     | /   \ |      | /   \ |  |_|  ||     |
@@ -48,6 +49,7 @@ const commands = {
 };
 
 var inMenu = false;
+let inMiasma = false;
 
 var pauseInput = true;
 
@@ -157,6 +159,10 @@ function readyStory () {
 
     document.getElementById('quit').addEventListener("click", (event) => {
         if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+            if (inMiasma) {
+                document.getElementById('quit-window').classList.remove("hidden");
+                document.getElementById('quit').classList.add("menuOpen");
+            }
             if (pauseInput || inMenu) return;
             inMenu = true;
             document.getElementById('quit-window').classList.remove("hidden");
@@ -450,6 +456,7 @@ function updateDialog(str) {
         const log = document.querySelector('#MIASMA')
         const miasma = str;
         if (miasma.includes("MIASMALOG_1")) {
+            ipcRenderer.invoke('achieve-1');
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -559,6 +566,7 @@ function updateDialog(str) {
             `
         }
         if (miasma.includes("MIASMALOG_8")) {
+            ipcRenderer.invoke('achieve-2');
             log.innerHTML = `
             <br>mmaisma end entry  5-6
             <br>
@@ -591,6 +599,7 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
+            inMiasma = false;
             toggleAutoplay();
             toggleAutoplay();
         }));
@@ -1182,6 +1191,17 @@ function sliderInvertValue(minVal, maxVal, curVal) {
   newVal = parseInt(minVal) + parseInt(newVal); // I HATE JS I HATE JS I HATE JS I HATE JS
   return newVal;
 }
+
+//electron
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('quit-window-yes').addEventListener('click', () => {
+        ipcRenderer.invoke('quit-app');
+    });
+    document.getElementById('fullscreen').addEventListener('click', () => {
+      ipcRenderer.invoke('fullscreen-app');
+  });
+  });
+  
 
 /* 
 
