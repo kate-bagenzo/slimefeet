@@ -11,6 +11,7 @@ if (useSteam) {
   const client = steamworks.init(3551200);
   console.log(client.localplayer.getName());
 
+  app.commandLine.appendSwitch('no-sandbox');
   app.commandLine.appendSwitch("in-process-gpu");
   app.commandLine.appendSwitch("disable-direct-composition");
   app.allowRendererProcessReuse = false;
