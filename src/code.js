@@ -456,7 +456,7 @@ function updateDialog(str) {
         const log = document.querySelector('#MIASMA')
         const miasma = str;
         if (miasma.includes("MIASMALOG_1")) {
-
+            ipcRenderer.invoke('achieve-1');
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -566,6 +566,7 @@ function updateDialog(str) {
             `
         }
         if (miasma.includes("MIASMALOG_8")) {
+            ipcRenderer.invoke('achieve-2');
             log.innerHTML = `
             <br>mmaisma end entry  5-6
             <br>

@@ -6,16 +6,12 @@ import steamworks from 'steamworks.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const useSteam = false;
-if (useSteam) {
-  const client = steamworks.init(3551200);
-  console.log(client.localplayer.getName());
-
-  app.commandLine.appendSwitch('no-sandbox');
-  app.commandLine.appendSwitch("in-process-gpu");
-  app.commandLine.appendSwitch("disable-direct-composition");
-  app.allowRendererProcessReuse = false;
-}
+const client = steamworks.init(3551200);
+console.log(client.localplayer.getName());
+app.commandLine.appendSwitch('no-sandbox');
+app.commandLine.appendSwitch("in-process-gpu");
+app.commandLine.appendSwitch("disable-direct-composition");
+app.allowRendererProcessReuse = false;
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -33,7 +29,7 @@ const createWindow = () => {
             contextIsolation: false
         }
     });
-    win.removeMenu();
+    //win.removeMenu();
     win.loadFile('src/index.html');
 }
 
@@ -44,10 +40,18 @@ app.whenReady().then(() => {
 ipcMain.handle('quit-app', () => {
     console.log('quitting...');
     app.quit();
-  });
+});
+
+ipcMain.handle('achieve-1', () => {
+  client.achievement.activate('miasma');
+})
+
+ipcMain.handle('achieve-2', () => {
+  client.achievement.activate('slimefeet');
+})
 
   ipcMain.handle('fullscreen-app', () => {
     const win = BrowserWindow.getFocusedWindow();
     win.isFullScreen() ? win.setFullScreen(false) : win.setFullScreen(true);
-  });
+});
   
