@@ -6,7 +6,7 @@ import steamworks from 'steamworks.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const useSteam = true
+const useSteam = false;
 if (useSteam) {
   const client = steamworks.init(3551200);
   console.log(client.localplayer.getName());
@@ -42,6 +42,7 @@ app.whenReady().then(() => {
 });
 
 ipcMain.handle('quit-app', () => {
+    console.log('quitting...');
     app.quit();
   });
 
