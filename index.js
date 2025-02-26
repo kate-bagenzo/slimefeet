@@ -24,12 +24,11 @@ const createWindow = () => {
         minHeight: 1000,
         icon: path.join(__dirname, "./src/slimefeet.png"),
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
             contextIsolation: false
         }
     });
-    //win.removeMenu();
+    win.removeMenu();
     win.loadFile('src/index.html');
 }
 
