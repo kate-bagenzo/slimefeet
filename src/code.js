@@ -48,6 +48,7 @@ const commands = {
 };
 
 var inMenu = false;
+let inMiasma = false;
 
 var pauseInput = true;
 
@@ -157,6 +158,10 @@ function readyStory () {
 
     document.getElementById('quit').addEventListener("click", (event) => {
         if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+            if (inMiasma) {
+                document.getElementById('quit-window').classList.remove("hidden");
+                document.getElementById('quit').classList.add("menuOpen");
+            }
             if (pauseInput || inMenu) return;
             inMenu = true;
             document.getElementById('quit-window').classList.remove("hidden");
@@ -591,6 +596,7 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
+            inMiasma = false;
             toggleAutoplay();
             toggleAutoplay();
         }));
