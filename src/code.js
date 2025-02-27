@@ -1,4 +1,3 @@
-const { ipcRenderer } = require('electron');
 /*
  __   __  __   ____   _____   ___   ______   ___   __   __  _____ 
 |  | |  ||  | |    \ |     | /   \ |      | /   \ |  |_|  ||     |
@@ -16,6 +15,7 @@ do not ask me for features
 mods by @stanwixbuster / stanwixbuster.itch.io
 
 */
+
 
 
 var current = 0;
@@ -49,7 +49,6 @@ const commands = {
 };
 
 var inMenu = false;
-let inMiasma = false;
 
 var pauseInput = true;
 
@@ -83,7 +82,7 @@ async function getFile(fileURL) {
 function parseStory() {
     console.log('getting file');
     // Passing file url 
-    getFile('story.txt').then(content =>{
+    getFile('slimefeet/story.txt').then(content =>{
     storyArray = content.trim().split("###");
     // console.log(storyArray);
 
@@ -126,22 +125,9 @@ function readyStory () {
     document.getElementById('messagelog').classList.toggle('hidden');
     document.getElementById('messagecontainer').classList.toggle('hidden');
     document.getElementById('dial').onclick = function() {
-        if (!pauseInput && !inMenu) {
-            if (autoplay) {
-                toggleAutoplay();
-            }
-            progress();
-        }
+        if (!autoplay && !pauseInput && !inMenu) {progress();}
     };
-    document.getElementById('main').onclick = function() {
-        if (!pauseInput && !inMenu) {
-            if (autoplay) {
-                toggleAutoplay();
-            }
-            progress();
-        }
-    };
-    document.getElementById('settings').onclick = function(e) {
+    document.getElementById('settings').onclick = function() {
         toggleSettings();
     };
 
@@ -157,43 +143,24 @@ function readyStory () {
         toggleAutoplay();
     });
 
-    document.getElementById('quit').addEventListener("click", (event) => {
-        if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
-            if (inMiasma) {
-                document.getElementById('quit-window').classList.remove("hidden");
-                document.getElementById('quit').classList.add("menuOpen");
-            }
-            if (pauseInput || inMenu) return;
-            inMenu = true;
-            document.getElementById('quit-window').classList.remove("hidden");
-            document.getElementById('quit').classList.add("menuOpen");
-        }
-
+    document.getElementById('reset').addEventListener("click", (event) => {
+        if (pauseInput || inMenu) return;
+        document.getElementById('reset-window').classList.remove("hidden");
+        document.getElementById('reset').classList.add("menuOpen");
     });
-    document.getElementById('quit-window-no').addEventListener("click", (event) => {
-        inMenu = false;
-        document.getElementById('quit-window').classList.add("hidden");
-        document.getElementById('quit').classList.remove("menuOpen");
+    document.getElementById('reset-window-no').addEventListener("click", (event) => {
+        document.getElementById('reset-window').classList.add("hidden");
+        document.getElementById('reset').classList.remove("menuOpen");
     });
-    document.getElementById('quit-window-yes').addEventListener("click", (event) => {
+    document.getElementById('reset-window-yes').addEventListener("click", (event) => {
         clearSave();
+        window.location.reload();
     });
-
-    document.getElementById('close-settings').addEventListener("click", () => {
-        toggleSettings();
-    })
 
     document.getElementById("curtain").addEventListener("click", (event) => {
-        musicPlayer("MUS_PC");
         document.getElementById("curtain").style.opacity = "0";
         document.getElementById("curtain").style.pointerEvents = "none";
-        sfxPlayer("SFX_LOG");
-    });
-    document.getElementById("curtain-2").addEventListener("click", (event) => {
-        document.getElementById("curtain-2").style.opacity = "0";
-        document.getElementById("curtain-2").style.pointerEvents = "none";
         pauseInput = false;
-        musicPlayer("SFX_LOG");
     });
     console.log('action!');
 };
@@ -287,11 +254,10 @@ function logKey(e) {
             toggleSettings();
             break;
         case " ":
+            if (!autoplay) {progress();}
+            break;
         case "Enter":
-            if (autoplay) {
-                toggleAutoplay();
-            }
-            progress();
+            if (!autoplay) {progress();}
             break;
         default:
             target = e.keyCode - 49;
@@ -452,11 +418,9 @@ function updateDialog(str) {
 
     if (lookForMIASMA.test(str)) {
         console.log("MIASMA LOG FOUND")
-        console.log(`log is ${str}`)
         const log = document.querySelector('#MIASMA')
-        const miasma = str;
-        if (miasma.includes("MIASMALOG_1")) {
-            ipcRenderer.invoke('achieve-1');
+        const miasma = str.slice(0, -1)
+        if (miasma == "MIASMALOG_1") {
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -473,13 +437,13 @@ function updateDialog(str) {
 
             `
         }
-        if (miasma.includes("MIASMALOG_2")) {
+        if (miasma == "MIASMALOG_2") {
             log.innerHTML = `
             <p>Miasma End Entry #: 5-1</p>
             <p></p>
             <p>Author: Estelle Mcclendon</p>
             <p>Date: 2081//635</p>
-            <p>Authors Note: While atypical I, Estelle Mcclendon, have been tasked with writing the fifth End Entry in the observation log due to unrelated circumstances that require solo personnel quarantine. To maintain consistency with previous Miasma End Entries, I will henceforth refer to myself as the “Host”.</p>
+            <p>Authors Note: While atypical I, Estelle Mcclendon, have been tasked with writing the fifth End Entry in the observation log due to unrelated circumstances that require solo personnel quarantine. This task is typically overseen by Abbi Veinace, who is responsible for writing End Entries, but under the current circumstances, I will assume this duty. To maintain consistency with previous Miasma End Entries, I will henceforth refer to myself as the “Host”.</p>
             <p></p>
             <p></p>
             <p>At the time of writing, approximately 9 hours have elapsed since Miasma made contact with the Host. Despite following official AOCP guidelines, a series of coincidences and maintenance failures lacking proper redress resulted in contact. First, due to abnormal weather conditions, the Site B entry hatch broke. Second, also due to abnormal weather conditions, the airlock gate did not close properly. A period of eight minutes elapsed prior to the completion of standard emergency resolution procedures. Fortunately, due to a pre-existing quarantine, this mission was conducted solo. Leaving Estelle Mcclendon the sole victim.</p>
@@ -491,7 +455,7 @@ function updateDialog(str) {
             <center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma.includes("MIASMALOG_3")) {
+        if (miasma == "MIASMALOG_3") {
             log.innerHTML = `
             <br>Important notice to all personnel.
             <br>
@@ -506,7 +470,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma.includes("MIASMALOG_4")) {
+        if (miasma == "MIASMALOG_4") {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-2
             <br>
@@ -522,14 +486,14 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma.includes("MIASMALOG_5")) {
+        if (miasma == "MIASMALOG_5") {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-3
             <br>
             <br>Author: Estelle Mcclrndon
             <br>Date: 2081//637
             <br>
-            <br>There have been no changes in cognitive function. No visual or auditory distortions. Minor change in normal bodily functions. The dark skin which had been making the discoloration difficult to see has now begun to show a deviation from the pre-existing Miasma documentation. The initial area of the afflicted skin has started to show a discoloration of a bluish hue instead of the usual dark brown that has shown on the previous light skinned hosts. And the most notable deviation is that the afflicted skin seems to be turning translucent. Higher melanin concentrations could be the cause.<br>
+            <br>There have been no changes in cognitive function. No visual or auditory distortions. Minor change in normal bodily functions. The dark skin which had been making the discoloration difficult to see has now begun to show a deviation from the pre-existing Miasma documentation. The initial area of the afflicted skin has started to show a discoloration of a bluish hue instead of the usual dark brown that has shown on the previous light skinned hosts. And the most notable deviation is that the afflicted skin seems to be turning damp and translucent. Higher melanin concentrations could be the cause.<br>
 
             <br>The Host's physical state has started to deteriorate drastically, her body has started to gain more elasticity from the waist down. With her legs unable to support the weight of her body, walking has become impossible, requiring the usage of the wheelchair to move around.<br>
             <br>
@@ -538,7 +502,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>            
             `
         }
-        if (miasma.includes("MIASMALOG_6")) {
+        if (miasma == "MIASMALOG_6") {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-4
             <br>
@@ -547,12 +511,12 @@ function updateDialog(str) {
             <br>
             <br>the hosts writing capabilities ahve deteriorated drastically and thus tehe reoprt with reflect that. The spread of the effect has fwully taken over the lweor half of the body and th transparent blue leaves the bones of gfht host visible. tHe hsots chest and upper arms have also started changing and the body is acting inoconsitent, host still needs to pee despite being unable to see the bladder nor intenstines. no hunger yet breathing feels laboured as the lungs still partially remain. Mire teesting should be done in future if soneone else ends up in this siaame situation. Despite mentioning the melanin concentration, I still suspect there might be some rare mutation in progress or an unkwown type of miasma. 
             <br>
-            <br>moving akl body parts is still possible despite the total destruction of muscle and joint thissues. the weight of my own body puts pressure and squish on her hips and moving between the bed and the wheelchair has become dhallenigng. in the future prividng the host a computer by the bed would be preferable.
+            <br>moving akl body parts is still possible despite the total destruction of muscle and joint thissues. the weight of my own body puts pressure and squish on her hips and moving between the bed and the wheelchair has become dhallenigng especially with hiw slpiery my skin is. in the future prividng the host a computer by the bed would be preferable.
             <br>
             <br><center><button id="endlog">End of entry.</button></center>            
             `
         }
-        if (miasma.includes("MIASMALOG_7")) {
+        if (miasma == "MIASMALOG_7") {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-5
             <br>
@@ -565,8 +529,7 @@ function updateDialog(str) {
             <center><button id="endlog">end of entry lol</button></center>
             `
         }
-        if (miasma.includes("MIASMALOG_8")) {
-            ipcRenderer.invoke('achieve-2');
+        if (miasma == "MIASMALOG_8") {
             log.innerHTML = `
             <br>mmaisma end entry  5-6
             <br>
@@ -578,7 +541,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">end of entry</button></center>
             `
         }
-        if (miasma.includes("MIASMALOG_9")) {
+        if (miasma == "MIASMALOG_9") {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-7
             <br>Terese Hillevi<br>
@@ -599,9 +562,6 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
-            inMiasma = false;
-            toggleAutoplay();
-            toggleAutoplay();
         }));
         
         return
@@ -994,6 +954,7 @@ function updateDialog(str) {
 
 };
 
+
 function calcAutoSpeed() { 
     let settingsSpeed = localStorage.getItem("settingsAutoplaySpeed");
     let speed = settingsSpeed + (document.getElementById('text3').innerHTML.length * 0.5); // uhhhhhhhhhhhhhh i changed this line i hope it dont blow the fuck upppp
@@ -1003,6 +964,8 @@ function calcAutoSpeed() {
     //console.log(speed);
     return speed;
 }
+
+
 
 
 function clearHistory() {
@@ -1162,27 +1125,24 @@ function logMessage(speaker, speakerclass, text) {
 };
 
 function togglehistory() {
-    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('settings-window').classList.contains('hidden')) {
-        document.getElementById('historybutton').classList.toggle("menuOpen")
-    
-        document.getElementById('messagecontainer').classList.toggle('hidden');
-        document.getElementById('messagelog').classList.toggle('hidden');
-        document.getElementById('fg1').classList.toggle('hidden');
-        inMenu = !inMenu;
-    }
+    document.getElementById('historybutton').classList.toggle("menuOpen")
+
+    document.getElementById('messagecontainer').classList.toggle('hidden');
+    document.getElementById('messagelog').classList.toggle('hidden');
+    document.getElementById('fg1').classList.toggle('hidden');
+    inMenu = !inMenu;
+
 }
 
 function toggleSettings() {
-    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
-        document.getElementById('settings').classList.toggle("menuOpen")
-    
-        document.getElementById('settings-window').classList.toggle('hidden');
-            if (document.getElementById('settings-window').classList.contains('hidden')) {
-                inMenu = false;
-            } else {
-                inMenu = true;
-            }
-    }
+    document.getElementById('settings').classList.toggle("menuOpen")
+
+    document.getElementById('settings-window').classList.toggle('hidden');
+        if (document.getElementById('settings-window').classList.contains('hidden')) {
+            inMenu = false;
+        } else {
+            inMenu = true;
+        }
 }
 
 function sliderInvertValue(minVal, maxVal, curVal) {
@@ -1191,17 +1151,6 @@ function sliderInvertValue(minVal, maxVal, curVal) {
   newVal = parseInt(minVal) + parseInt(newVal); // I HATE JS I HATE JS I HATE JS I HATE JS
   return newVal;
 }
-
-//electron
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('quit-window-yes').addEventListener('click', () => {
-        ipcRenderer.invoke('quit-app');
-    });
-    document.getElementById('fullscreen').addEventListener('click', () => {
-      ipcRenderer.invoke('fullscreen-app');
-  });
-  });
-  
 
 /* 
 

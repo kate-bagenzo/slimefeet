@@ -1,6 +1,8 @@
 START
-CLEARSCREEN CLEARSTATUS SFX_TITLE BG_TITLE - 
-STATUS:[<center>body horror</center>] - slime feet is about body horror
+CLEARSCREEN CLEARSTATUS BG_TITLE SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
+CLEARSCREEN CLEARSTATUS SFX_TITLE STATUS:[<center>body horror</center>] - slime feet is about body horror
 STATUS:[<center>body horror<br>foot fetishism</center>] - slime feet is about extravagant foot fetishism
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex</center>] - slime feet is about sloppy messy lesbian cybersex
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot</center>] - slime feet is about 'faggot' getting thrown around like candy
@@ -51,8 +53,9 @@ SFX_MIASMA IMAGE:BG_BAD - Until it wasn't.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC SFX_LOG - >
 MIASMALOG_1
+CLEARSCREEN CLEARSTATUS - >>
 CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
 MIASMALOG_2
 MUS_READ CLEARSCREEN CLEARSTATUS BG_PC FG_BLANK - day one
@@ -193,8 +196,9 @@ S! - I'll try.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
 MIASMALOG_3
+CLEARSCREEN CLEARSTATUS - >>
 CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
 MIASMALOG_4
 MUS_2 CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day two
@@ -365,7 +369,9 @@ A! - Good night. Rest well.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_5
 MUS_3 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day three
 STATUS:[<center>day three</center>] - 
@@ -614,7 +620,9 @@ A! - Me too.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_6
 MUS_4 CLEARSCREEN CLEARSTATUS FG_BLANK - day four
 STATUS:[<center>day four</center>] - 
@@ -998,7 +1006,9 @@ A! - hug
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_7
 MUS_5 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day five
 STATUS:[<center>day five</center>] - 
@@ -1421,7 +1431,9 @@ S! - y
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_8
 CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day six
 STATUS:[<center>day six</center>] - 
