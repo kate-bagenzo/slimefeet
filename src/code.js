@@ -1,3 +1,4 @@
+const { ipcRenderer } = require('electron');
 /*
  __   __  __   ____   _____   ___   ______   ___   __   __  _____ 
 |  | |  ||  | |    \ |     | /   \ |      | /   \ |  |_|  ||     |
@@ -15,7 +16,6 @@ do not ask me for features
 mods by @stanwixbuster / stanwixbuster.itch.io
 
 */
-
 
 
 var current = 0;
@@ -49,6 +49,7 @@ const commands = {
 };
 
 var inMenu = false;
+let inMiasma = false;
 
 var pauseInput = true;
 
@@ -82,7 +83,7 @@ async function getFile(fileURL) {
 function parseStory() {
     console.log('getting file');
     // Passing file url 
-    getFile('slimefeet/story.txt').then(content =>{
+    getFile('story.txt').then(content =>{
     storyArray = content.trim().split("###");
     // console.log(storyArray);
 
@@ -125,9 +126,22 @@ function readyStory () {
     document.getElementById('messagelog').classList.toggle('hidden');
     document.getElementById('messagecontainer').classList.toggle('hidden');
     document.getElementById('dial').onclick = function() {
-        if (!autoplay && !pauseInput && !inMenu) {progress();}
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
     };
-    document.getElementById('settings').onclick = function() {
+    document.getElementById('main').onclick = function() {
+        if (!pauseInput && !inMenu) {
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
+        }
+    };
+    document.getElementById('settings').onclick = function(e) {
         toggleSettings();
     };
 
@@ -143,24 +157,43 @@ function readyStory () {
         toggleAutoplay();
     });
 
-    document.getElementById('reset').addEventListener("click", (event) => {
-        if (pauseInput || inMenu) return;
-        document.getElementById('reset-window').classList.remove("hidden");
-        document.getElementById('reset').classList.add("menuOpen");
+    document.getElementById('quit').addEventListener("click", (event) => {
+        if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+            if (inMiasma) {
+                document.getElementById('quit-window').classList.remove("hidden");
+                document.getElementById('quit').classList.add("menuOpen");
+            }
+            if (pauseInput || inMenu) return;
+            inMenu = true;
+            document.getElementById('quit-window').classList.remove("hidden");
+            document.getElementById('quit').classList.add("menuOpen");
+        }
+
     });
-    document.getElementById('reset-window-no').addEventListener("click", (event) => {
-        document.getElementById('reset-window').classList.add("hidden");
-        document.getElementById('reset').classList.remove("menuOpen");
+    document.getElementById('quit-window-no').addEventListener("click", (event) => {
+        inMenu = false;
+        document.getElementById('quit-window').classList.add("hidden");
+        document.getElementById('quit').classList.remove("menuOpen");
     });
-    document.getElementById('reset-window-yes').addEventListener("click", (event) => {
+    document.getElementById('quit-window-yes').addEventListener("click", (event) => {
         clearSave();
-        window.location.reload();
     });
 
+    document.getElementById('close-settings').addEventListener("click", () => {
+        toggleSettings();
+    })
+
     document.getElementById("curtain").addEventListener("click", (event) => {
+        musicPlayer("MUS_PC");
         document.getElementById("curtain").style.opacity = "0";
         document.getElementById("curtain").style.pointerEvents = "none";
+        sfxPlayer("SFX_LOG");
+    });
+    document.getElementById("curtain-2").addEventListener("click", (event) => {
+        document.getElementById("curtain-2").style.opacity = "0";
+        document.getElementById("curtain-2").style.pointerEvents = "none";
         pauseInput = false;
+        musicPlayer("SFX_LOG");
     });
     console.log('action!');
 };
@@ -254,10 +287,11 @@ function logKey(e) {
             toggleSettings();
             break;
         case " ":
-            if (!autoplay) {progress();}
-            break;
         case "Enter":
-            if (!autoplay) {progress();}
+            if (autoplay) {
+                toggleAutoplay();
+            }
+            progress();
             break;
         default:
             target = e.keyCode - 49;
@@ -418,9 +452,11 @@ function updateDialog(str) {
 
     if (lookForMIASMA.test(str)) {
         console.log("MIASMA LOG FOUND")
+        console.log(`log is ${str}`)
         const log = document.querySelector('#MIASMA')
-        const miasma = str.slice(0, -1)
-        if (miasma == "MIASMALOG_1") {
+        const miasma = str;
+        if (miasma.includes("MIASMALOG_1")) {
+            ipcRenderer.invoke('achieve-1');
             log.innerHTML = `
             <p>Hazard log: Miasma<br>Hazard level: D<p>
             <p>Author: Terese Hillevi<br>Chief Medical Officer<br>Amoninsula Research Facility<br>Date: 1581//103</p>
@@ -437,7 +473,7 @@ function updateDialog(str) {
 
             `
         }
-        if (miasma == "MIASMALOG_2") {
+        if (miasma.includes("MIASMALOG_2")) {
             log.innerHTML = `
             <p>Miasma End Entry #: 5-1</p>
             <p></p>
@@ -455,7 +491,7 @@ function updateDialog(str) {
             <center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_3") {
+        if (miasma.includes("MIASMALOG_3")) {
             log.innerHTML = `
             <br>Important notice to all personnel.
             <br>
@@ -470,7 +506,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_4") {
+        if (miasma.includes("MIASMALOG_4")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-2
             <br>
@@ -486,7 +522,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">End of entry.</button></center>
             `
         }
-        if (miasma == "MIASMALOG_5") {
+        if (miasma.includes("MIASMALOG_5")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-3
             <br>
@@ -499,10 +535,10 @@ function updateDialog(str) {
             <br>
             <br>One change to highlight. The fingers of the host are experiencing the same “clunky” feeling previously experienced in the toes.  Which has made the writing of this entry more time consuming. Due to the unusual circumstances which require the host to write her own End Entries, it is likely she won't be able to document the symptoms all the way to the end.<br>
             <br>
-            <br><center><button id="endlog">End of entry.</button></center>            
+            <br><center><button id="endlog">End of entry.</button></center>   
             `
         }
-        if (miasma == "MIASMALOG_6") {
+        if (miasma.includes("MIASMALOG_6")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-4
             <br>
@@ -513,10 +549,10 @@ function updateDialog(str) {
             <br>
             <br>moving akl body parts is still possible despite the total destruction of muscle and joint thissues. the weight of my own body puts pressure and squish on her hips and moving between the bed and the wheelchair has become dhallenigng especially with hiw slpiery my skin is. in the future prividng the host a computer by the bed would be preferable.
             <br>
-            <br><center><button id="endlog">End of entry.</button></center>            
+            <br><center><button id="endlog">End of entry.</button></center>    
             `
         }
-        if (miasma == "MIASMALOG_7") {
+        if (miasma.includes("MIASMALOG_7")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-5
             <br>
@@ -529,7 +565,8 @@ function updateDialog(str) {
             <center><button id="endlog">end of entry lol</button></center>
             `
         }
-        if (miasma == "MIASMALOG_8") {
+        if (miasma.includes("MIASMALOG_8")) {
+            ipcRenderer.invoke('achieve-2');
             log.innerHTML = `
             <br>mmaisma end entry  5-6
             <br>
@@ -541,7 +578,7 @@ function updateDialog(str) {
             <br><center><button id="endlog">end of entry</button></center>
             `
         }
-        if (miasma == "MIASMALOG_9") {
+        if (miasma.includes("MIASMALOG_9")) {
             log.innerHTML = `
             <br>Miasma End Entry #: 5-7
             <br>Terese Hillevi<br>
@@ -562,6 +599,9 @@ function updateDialog(str) {
         document.querySelector('#endlog').addEventListener('click', (e => {
             document.querySelector('#MIASMA').classList.add('hidden');
             inMenu = false;
+            inMiasma = false;
+            toggleAutoplay();
+            toggleAutoplay();
         }));
         
         return
@@ -954,7 +994,6 @@ function updateDialog(str) {
 
 };
 
-
 function calcAutoSpeed() { 
     let settingsSpeed = localStorage.getItem("settingsAutoplaySpeed");
     let speed = settingsSpeed + (document.getElementById('text3').innerHTML.length * 0.5); // uhhhhhhhhhhhhhh i changed this line i hope it dont blow the fuck upppp
@@ -964,8 +1003,6 @@ function calcAutoSpeed() {
     //console.log(speed);
     return speed;
 }
-
-
 
 
 function clearHistory() {
@@ -1125,24 +1162,27 @@ function logMessage(speaker, speakerclass, text) {
 };
 
 function togglehistory() {
-    document.getElementById('historybutton').classList.toggle("menuOpen")
-
-    document.getElementById('messagecontainer').classList.toggle('hidden');
-    document.getElementById('messagelog').classList.toggle('hidden');
-    document.getElementById('fg1').classList.toggle('hidden');
-    inMenu = !inMenu;
-
+    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('settings-window').classList.contains('hidden')) {
+        document.getElementById('historybutton').classList.toggle("menuOpen")
+    
+        document.getElementById('messagecontainer').classList.toggle('hidden');
+        document.getElementById('messagelog').classList.toggle('hidden');
+        document.getElementById('fg1').classList.toggle('hidden');
+        inMenu = !inMenu;
+    }
 }
 
 function toggleSettings() {
-    document.getElementById('settings').classList.toggle("menuOpen")
-
-    document.getElementById('settings-window').classList.toggle('hidden');
-        if (document.getElementById('settings-window').classList.contains('hidden')) {
-            inMenu = false;
-        } else {
-            inMenu = true;
-        }
+    if (document.getElementById('quit-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+        document.getElementById('settings').classList.toggle("menuOpen")
+    
+        document.getElementById('settings-window').classList.toggle('hidden');
+            if (document.getElementById('settings-window').classList.contains('hidden')) {
+                inMenu = false;
+            } else {
+                inMenu = true;
+            }
+    }
 }
 
 function sliderInvertValue(minVal, maxVal, curVal) {
@@ -1151,6 +1191,17 @@ function sliderInvertValue(minVal, maxVal, curVal) {
   newVal = parseInt(minVal) + parseInt(newVal); // I HATE JS I HATE JS I HATE JS I HATE JS
   return newVal;
 }
+
+//electron
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('quit-window-yes').addEventListener('click', () => {
+        ipcRenderer.invoke('quit-app');
+    });
+    document.getElementById('fullscreen').addEventListener('click', () => {
+      ipcRenderer.invoke('fullscreen-app');
+  });
+  });
+  
 
 /* 
 
