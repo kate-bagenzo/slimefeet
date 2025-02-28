@@ -1,6 +1,8 @@
 START
-CLEARSCREEN CLEARSTATUS SFX_TITLE BG_TITLE - 
-STATUS:[<center>body horror</center>] - slime feet is about body horror
+CLEARSCREEN CLEARSTATUS BG_TITLE SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
+CLEARSCREEN CLEARSTATUS SFX_TITLE STATUS:[<center>body horror</center>] - slime feet is about body horror
 STATUS:[<center>body horror<br>foot fetishism</center>] - slime feet is about extravagant foot fetishism
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex</center>] - slime feet is about sloppy messy lesbian cybersex
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot</center>] - slime feet is about 'faggot' getting thrown around like candy
@@ -51,8 +53,9 @@ SFX_MIASMA IMAGE:BG_BAD - Until it wasn't.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC SFX_LOG - >
 MIASMALOG_1
+CLEARSCREEN CLEARSTATUS - >>
 CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
 MIASMALOG_2
 MUS_READ CLEARSCREEN CLEARSTATUS BG_PC FG_BLANK - day one
@@ -193,8 +196,9 @@ S! - I'll try.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
 MIASMALOG_3
+CLEARSCREEN CLEARSTATUS - >>
 CLEARSCREEN CLEARSTATUS SFX_LOG - >>>
 MIASMALOG_4
 MUS_2 CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day two
@@ -303,7 +307,8 @@ S! - but like instead I'm going to die and fade away
 A! - Yeah.. It is.
 S! - You know, maybe clunky wasn't the best word for how it feels.
 S! - It's been a while so the symptoms might be progressing
-S! - but like I can notice how the bones are softening.
+S! - but like my skin feels sweaty
+S! - like maybe im imagining it, but I can notice how the bones are softening.
 S! - Muscles, tendons, all of that.
 S! - I tried pressing down with a thumb and my skin didn't have the same resistance as usual.
 BG_BONE - 
@@ -365,7 +370,9 @@ A! - Good night. Rest well.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_5
 MUS_3 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day three
 STATUS:[<center>day three</center>] - 
@@ -427,6 +434,7 @@ S! - It like idk it feels warm and like
 S! - makes m feel like im still in control of my body
 A! - I get that
 S! - my crotch feels so good
+S! - its like im sweaty everywhere
 S! - even with clumsy soft fingers I can rub and it feels good
 S! - My pussy is so soft too i bet i wouldnt even need warmup to fit three in
 A! - Estelle......................
@@ -614,7 +622,9 @@ A! - Me too.
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_6
 MUS_4 CLEARSCREEN CLEARSTATUS FG_BLANK - day four
 STATUS:[<center>day four</center>] - 
@@ -760,6 +770,8 @@ S! - omg watf in gogiun on about blue slimegirl pussy??
 BG_GAY - 
 
 S! - i knew i coudl give you the slime girl kink lpmaooooo
+
+
 S! - hey ur not allwed to cum did you cum youre not typing?
 A! - I DIDNT!!!
 S! - good becauseyou have to keep strokign but oyure not allowed to cu mokay?
@@ -797,13 +809,16 @@ S! - get up
 A! - Yes mommy
 S! - im on my back feet up put your shaft agasint my wetty adn yoyr nose against my soles
 A! - gahhhhhYES
+S! - do u like how soft wmy toes are
+S! - htis is more than sweat
+A! - Yesss.my dick is so leaking too
 S! - ur nor allled to pt it in yet start humping myu drippy lips
 S! - now
 A! - Yes when can i cum
 S! - not yethump
 S! - myu soles have never been tghis soft
 A! - They havent
-S! - Blue slime girl feet
+S! - sloppy Blue slime girl feet
 S! - you loe that dont you faggit
 A! - I do I do
 S! - put itin now nose under toes now huf f my feet fumes now
@@ -849,7 +864,7 @@ S! - it feels so good
 A! - It does gah
 S! - dont pull out yet lets just hug
 A! - Youre so warm
-S! - warm and sticky cause of u
+S! - warm and evn mor sticky cause of u
 S! - haaaah im so fkn dizzy
 
 A! - hug
@@ -858,6 +873,8 @@ S! - hug
 
 S! - my braisn all scrambled
 A! - Yeah mine too
+S! - hhugging gets all my sweatlsime on u
+A! - Gah.. yeah
 BG_6 - 
 
 S! - im feeling so much rn
@@ -998,7 +1015,9 @@ A! - hug
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_7
 MUS_5 CLEARSCREEN CLEARSTATUS BG_PC4 FG_BLANK - day five
 STATUS:[<center>day five</center>] - 
@@ -1069,7 +1088,10 @@ S! - fuck this place is a mess like
 A! - Huh what do you mean?
 S! - even my ekyboard is so sticky lmao
 A! - What why???
-S! - yo think i have tiem to care about washing my hands??
+S! - evrtinh i toch is leaving slime residue
+A! - What
+A! - Oh I thought you meant like rubbing your pussy juice on it
+S! - thattoo yo think i have tiem to care about washing my hands??
 S! - d you know how hard ive squirted here bcos of u?
 A! - Oh my god.
 S! - be youre getting hoernry about that too huh??
@@ -1082,7 +1104,7 @@ S! - ?
 A! - What the fuck stop copying me
 S! - hey wheres your han rn
 A! - Shut up! On the keyboard!
-S! - okwheres your hand when i tell you to lickc my keys clean
+S! - okwheres your hand when i tell you to lickc my slimecum keys clean
 A! - wHAT GROSS
 S! - yearight youd do it with a boner faggot
 A! - NFdhfEstelle
@@ -1241,6 +1263,7 @@ S! - alk about slime girl
 A! - Ngh.
 
 A! - I’m obsessed. I’m already obsessed
+A! - I love how when I grab you my fingers effertlessly dimple your soft skin
 A! - I want to put it in and see your sexy big fat round blue transparent squishy buttcheeks jiggle as I stare at my own cock dripping in you
 S! - m
 
@@ -1296,6 +1319,7 @@ S! - tharts right
 A! - I lose my mind I couldn’t stop any more it was too late
 A! - My cum is all over your blue feet an thighs
 A! - Some of it is on your perfect butt again
+A! - Our fluids are mixing
 A! - It shot so hard
 
 A! - You love that
@@ -1421,7 +1445,9 @@ S! - y
 
 
 
-CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >>>
+CLEARSCREEN CLEARSTATUS MUS_PC BG_CLEAR SFX_LOG - >
+CLEARSCREEN - >>
+CLEARSCREEN - >>>
 MIASMALOG_8
 CLEARSCREEN CLEARSTATUS BG_PC2 FG_BLANK - day six
 STATUS:[<center>day six</center>] - 

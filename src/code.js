@@ -158,15 +158,21 @@ function readyStory () {
     });
 
     document.getElementById('quit').addEventListener("click", (event) => {
-        if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
-            if (inMiasma) {
+        if (document.getElementById('quit-window').classList.contains('hidden')) {
+            if (document.getElementById('settings-window').classList.contains('hidden') && document.getElementById('messagecontainer').classList.contains('hidden')) {
+                if (inMiasma) {
+                    document.getElementById('quit-window').classList.remove("hidden");
+                    document.getElementById('quit').classList.add("menuOpen");
+                }
+                if (pauseInput || inMenu) return;
+                inMenu = true;
                 document.getElementById('quit-window').classList.remove("hidden");
                 document.getElementById('quit').classList.add("menuOpen");
             }
-            if (pauseInput || inMenu) return;
-            inMenu = true;
-            document.getElementById('quit-window').classList.remove("hidden");
-            document.getElementById('quit').classList.add("menuOpen");
+        } else {
+            inMenu = false;
+            document.getElementById('quit-window').classList.add("hidden");
+            document.getElementById('quit').classList.remove("menuOpen");
         }
 
     });
@@ -479,7 +485,7 @@ function updateDialog(str) {
             <p></p>
             <p>Author: Estelle Mcclendon</p>
             <p>Date: 2081//635</p>
-            <p>Authors Note: While atypical I, Estelle Mcclendon, have been tasked with writing the fifth End Entry in the observation log due to unrelated circumstances that require solo personnel quarantine. To maintain consistency with previous Miasma End Entries, I will henceforth refer to myself as the “Host”.</p>
+            <p>Authors Note: While atypical I, Estelle Mcclendon, have been tasked with writing the fifth End Entry in the observation log due to unrelated circumstances that require solo personnel quarantine. This task is typically overseen by Abbi Veinace, who is responsible for writing End Entries, but under the current circumstances, I will assume this duty. To maintain consistency with previous Miasma End Entries, I will henceforth refer to myself as the “Host”.</p>
             <p></p>
             <p></p>
             <p>At the time of writing, approximately 9 hours have elapsed since Miasma made contact with the Host. Despite following official AOCP guidelines, a series of coincidences and maintenance failures lacking proper redress resulted in contact. First, due to abnormal weather conditions, the Site B entry hatch broke. Second, also due to abnormal weather conditions, the airlock gate did not close properly. A period of eight minutes elapsed prior to the completion of standard emergency resolution procedures. Fortunately, due to a pre-existing quarantine, this mission was conducted solo. Leaving Estelle Mcclendon the sole victim.</p>
@@ -529,13 +535,13 @@ function updateDialog(str) {
             <br>Author: Estelle Mcclrndon
             <br>Date: 2081//637
             <br>
-            <br>There have been no changes in cognitive function. No visual or auditory distortions. Minor change in normal bodily functions. The dark skin which had been making the discoloration difficult to see has now begun to show a deviation from the pre-existing Miasma documentation. The initial area of the afflicted skin has started to show a discoloration of a bluish hue instead of the usual dark brown that has shown on the previous light skinned hosts. And the most notable deviation is that the afflicted skin seems to be turning translucent. Higher melanin concentrations could be the cause.<br>
+            <br>There have been no changes in cognitive function. No visual or auditory distortions. Minor change in normal bodily functions. The dark skin which had been making the discoloration difficult to see has now begun to show a deviation from the pre-existing Miasma documentation. The initial area of the afflicted skin has started to show a discoloration of a bluish hue instead of the usual dark brown that has shown on the previous light skinned hosts. And the most notable deviation is that the afflicted skin seems to be turning damp and translucent. Higher melanin concentrations could be the cause.<br>
 
             <br>The Host's physical state has started to deteriorate drastically, her body has started to gain more elasticity from the waist down. With her legs unable to support the weight of her body, walking has become impossible, requiring the usage of the wheelchair to move around.<br>
             <br>
             <br>One change to highlight. The fingers of the host are experiencing the same “clunky” feeling previously experienced in the toes.  Which has made the writing of this entry more time consuming. Due to the unusual circumstances which require the host to write her own End Entries, it is likely she won't be able to document the symptoms all the way to the end.<br>
             <br>
-            <br><center><button id="endlog">End of entry.</button></center>            
+            <br><center><button id="endlog">End of entry.</button></center>   
             `
         }
         if (miasma.includes("MIASMALOG_6")) {
@@ -547,9 +553,9 @@ function updateDialog(str) {
             <br>
             <br>the hosts writing capabilities ahve deteriorated drastically and thus tehe reoprt with reflect that. The spread of the effect has fwully taken over the lweor half of the body and th transparent blue leaves the bones of gfht host visible. tHe hsots chest and upper arms have also started changing and the body is acting inoconsitent, host still needs to pee despite being unable to see the bladder nor intenstines. no hunger yet breathing feels laboured as the lungs still partially remain. Mire teesting should be done in future if soneone else ends up in this siaame situation. Despite mentioning the melanin concentration, I still suspect there might be some rare mutation in progress or an unkwown type of miasma. 
             <br>
-            <br>moving akl body parts is still possible despite the total destruction of muscle and joint thissues. the weight of my own body puts pressure and squish on her hips and moving between the bed and the wheelchair has become dhallenigng. in the future prividng the host a computer by the bed would be preferable.
+            <br>moving akl body parts is still possible despite the total destruction of muscle and joint thissues. the weight of my own body puts pressure and squish on her hips and moving between the bed and the wheelchair has become dhallenigng especially with hiw slpiery my skin is. in the future prividng the host a computer by the bed would be preferable.
             <br>
-            <br><center><button id="endlog">End of entry.</button></center>            
+            <br><center><button id="endlog">End of entry.</button></center>    
             `
         }
         if (miasma.includes("MIASMALOG_7")) {
