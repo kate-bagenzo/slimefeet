@@ -1,8 +1,8 @@
 START
-CLEARSCREEN CLEARSTATUS BG_TITLE SFX_LOG - >
+CLEARSTATUS BG_TITLE SFX_LOG - >
 CLEARSCREEN - >>
 CLEARSCREEN - >>>
-CLEARSCREEN CLEARSTATUS SFX_TITLE STATUS:[<center>body horror</center>] - slime feet is about body horror
+CLEARSCREEN SFX_TITLE STATUS:[<center>body horror</center>] - slime feet is about body horror
 STATUS:[<center>body horror<br>foot fetishism</center>] - slime feet is about extravagant foot fetishism
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex</center>] - slime feet is about sloppy messy lesbian cybersex
 STATUS:[<center>body horror<br>foot fetishism<br>lesbian cybersex<br>faggot</center>] - slime feet is about 'faggot' getting thrown around like candy
