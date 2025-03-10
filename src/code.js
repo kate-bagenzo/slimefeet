@@ -1206,6 +1206,23 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('fullscreen').addEventListener('click', () => {
       ipcRenderer.invoke('fullscreen-app');
   });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'f' |  e.key === 'F') {
+            ipcRenderer.invoke('fullscreen-app');
+        } else if (e.key === 'Escape') {
+            document.getElementById('quit-window').classList.add("hidden");
+            document.getElementById('quit').classList.remove("menuOpen");
+
+            document.getElementById('settings-window').classList.add("hidden");
+            document.getElementById('settings').classList.remove("menuOpen");
+
+            document.getElementById('historybutton').classList.remove("menuOpen")
+            document.getElementById('messagecontainer').classList.add('hidden');
+            document.getElementById('messagelog').classList.add('hidden');
+            document.getElementById('fg1').classList.add('hidden');
+            inMenu = false;
+        }
+    });
   });
   
 
