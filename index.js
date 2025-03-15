@@ -1,17 +1,10 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import steamworks from 'steamworks.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const client = steamworks.init(3551200);
-console.log(client.localplayer.getName());
-app.commandLine.appendSwitch('no-sandbox');
-app.commandLine.appendSwitch("in-process-gpu");
-app.commandLine.appendSwitch("disable-direct-composition");
-app.allowRendererProcessReuse = false;
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -42,11 +35,11 @@ ipcMain.handle('quit-app', () => {
 });
 
 ipcMain.handle('achieve-1', () => {
-  client.achievement.activate('miasma');
+
 })
 
 ipcMain.handle('achieve-2', () => {
-  client.achievement.activate('slimefeet');
+
 })
 
   ipcMain.handle('fullscreen-app', () => {
