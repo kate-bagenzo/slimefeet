@@ -17,7 +17,7 @@ const createWindow = () => {
     const win = new BrowserWindow({
         backgroundColor: '#000000',
         autoHideMenuBar: true,
-        fullscreen: true,
+        fullscreen: false,
         width: 1600,
         height: 1000,
         minWidth: 1600,
@@ -29,6 +29,7 @@ const createWindow = () => {
         }
     });
     win.removeMenu();
+    win.maximize();
     win.loadFile('src/index.html');
 }
 
